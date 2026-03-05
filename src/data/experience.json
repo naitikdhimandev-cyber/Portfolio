@@ -1,0 +1,75 @@
+[
+    {
+        "id": "exp-1",
+        "type": "internship",
+        "role": "Cyber Security Intern",
+        "company": "EdiGlobe (in association with Zhagaram Technologies)",
+        "period": "Aug 2025 - Oct 2025",
+        "location": "Remote",
+        "description": "Completed a structured Cyber Security internship focusing on practical implementation of ethical hacking concepts, vulnerability analysis, and real-world security problem solving. Successfully delivered one minor and one major project under the Cyber Security program.",
+        "markdown": "ediglobe-internship.md",
+        "image": "/experience/exp-02-3.png",
+        "gallery": [
+            "/experience/exp-02-1.png",
+            "/experience/exp-02-2.png"
+        ],
+        "tags": [
+            "Cyber Security",
+            "Ethical Hacking",
+            "Internship",
+            "Vulnerability Analysis"
+        ]
+    },
+    {
+        "id": "exp-2",
+        "type": "internship",
+        "role": "Ethical Hacking Intern",
+        "company": "Ethical Edufabrica Pvt. Ltd. (Alma Fiesta, IIT Bhubaneswar)",
+        "period": "Dec 2024 - Jan 2025",
+        "location": "Online / Remote",
+        "description": "Completed training and internship in Ethical Hacking. Designed and developed an \"Encryption and Decryption Tool\" project implementing core cryptographic concepts and secure logic handling. Demonstrated strong analytical skills and efficient task management throughout the internship.",
+        "markdown": "edufabrica-internship.md",
+        "image": "/experience/exp-01-2.png",
+        "gallery": [
+            "/experience/exp-01-1.png"
+        ],
+        "tags": [
+            "Ethical Hacking",
+            "Cryptography",
+            "Internship",
+            "Security Research"
+        ]
+    },
+    {
+        "id": "cert-1",
+        "type": "certification",
+        "name": "Cyber Security Program Completion",
+        "issuer": "EdiGlobe",
+        "date": "Oct 2025",
+        "description": "Completed structured Cyber Security training program including minor and major security-focused projects.",
+        "markdown": "ediglobe-cert.md",
+        "image": "/experience/exp-02-3.png",
+        "gallery": [],
+        "tags": [
+            "Cyber Security",
+            "Training",
+            "Certification"
+        ]
+    },
+    {
+        "id": "cert-2",
+        "type": "certification",
+        "name": "Ethical Hacking Certification",
+        "issuer": "Ethical Edufabrica Pvt. Ltd. (Alma Fiesta, IIT Bhubaneswar)",
+        "date": "Jan 2025",
+        "description": "Successfully completed an online training program in Ethical Hacking, covering cryptography, web security fundamentals, and vulnerability concepts.",
+        "markdown": "edufabrica-cert.md",
+        "image": "/experience/exp-01-2.png",
+        "gallery": [],
+        "tags": [
+            "Ethical Hacking",
+            "Certification",
+            "Security"
+        ]
+    }
+]

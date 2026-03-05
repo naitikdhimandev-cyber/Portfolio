@@ -1,0 +1,310 @@
+[
+    {
+    "id": "voting-system",
+    "title": "Decentralized Secure Online Voting System",
+    "description": "A multi-layer secure digital voting platform integrating biometric verification, AI-based fraud detection, and blockchain-backed vote integrity.",
+    "tags": [
+        "Cybersecurity",
+        "Blockchain",
+        "AI",
+        "Biometric Security",
+        "Research"
+    ],
+    "image": "/projects/voting-system3.png",
+    "gallery": [
+        "/projects/voting-system1.png",
+        "/projects/voting-system2.png",
+        "/projects/voting-system4.png",
+        "/projects/voting-system5.png",
+        "/projects/voting-system6.png",
+        "/projects/voting-system7.png",
+        "/projects/voting-system8.png",
+        "/projects/voting-system9.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/Imagine_Cup_2026_Microsoft-/tree/main/Imagine_Cup_2026_Microsoft",
+    "markdown": "voting-system.md",
+    "highlight": true
+    },
+    {
+    "id": "ai-support",
+    "title": "AI Customer Support & Voice Automation System",
+    "description": "An AI-powered voice automation platform capable of handling outbound promotional calls and intelligent inbound customer support using real-time conversational AI.",
+    "tags": [
+        "AI",
+        "Voice Systems",
+        "Automation",
+        "Customer Support",
+        "Hackathon"
+    ],
+    "image": "/projects/ai-support1.png",
+    "gallery": [
+        "/projects/ai-support2.png",
+        "/projects/ai-support3.png",
+        "/projects/ai-support4.png",
+        "/projects/ai-support5.png",
+        "/projects/ai-support6.png",
+        "/projects/ai-support7.png",
+        "/projects/ai-support8.png",
+        "/projects/ai-support9.png",
+        "/projects/ai-support10.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/IITG-2nd.Pos._EnCode_2025/tree/main/IITG-2nd.Pos_EnCode_2025",
+    "markdown": "ai-support.md",
+    "highlight": true
+    },
+    {
+    "id": "ai-health",
+    "title": "AI Food Co-Pilot - AI Food Label & Health Assistant",
+    "description": "AI-powered food label analysis system that scans ingredient lists and explains health impacts through natural voice and conversational reasoning.",
+    "tags": [
+        "AI",
+        "HealthTech",
+        "NLP",
+        "Computer Vision"
+    ],
+    "image": "/projects/ai-health1.png",
+    "gallery": [
+        "/projects/ai-health2.png",
+        "/projects/ai-health3.png",
+        "/projects/ai-health4.png",
+        "/projects/ai-health5.png",
+        "/projects/ai-health6.png",
+        "/projects/ai-health7.png"
+    ],
+    "github": "https://github.com/CypherChaser/Encode_2026",
+    "demo": "https://cypherchaser.github.io",
+    "videos": [
+        "https://drive.google.com/file/d/1NvL_vMBUMAh45Q7U1QlqorHJqsMKVt0_/view?usp=sharing"
+    ],
+    "markdown": "ai-health.md",
+    "highlight": true
+    },
+    {
+    "id": "securechain-messaging",
+    "title": "SecureChain - Blockchain Secure Messaging",
+    "description": "A blockchain-based secure messaging platform with end-to-end encryption and immutable message storage.",
+    "tags": [
+        "Cybersecurity",
+        "Blockchain",
+        "Cryptography",
+        "Web App"
+    ],
+    "image": "/projects/securechain-messaging3.png",
+    "gallery": [
+        "/projects/securechain-messaging1.png",
+        "/projects/securechain-messaging2.png",
+        "/projects/securechain-messaging4.png",
+        "/projects/securechain-messaging5.png",
+        "/projects/securechain-messaging6.png",
+        "/projects/securechain-messaging7.png",
+        "/projects/securechain-messaging8.png",
+        "/projects/securechain-messaging9.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/III-Semester_Crypto_PBL/tree/main/III-Semester_Crypto_PBL",
+    "markdown": "securechain-messaging.md",
+    "highlight": true
+    },
+    {
+    "id": "fairsplit",
+    "title": "FairSplit - Offline Group Expense Manager",
+    "description": "A privacy-focused iOS expense manager that splits group expenses at item level with receipt OCR and automatic settlement calculation.",
+    "tags": [
+        "iOS",
+        "SwiftUI",
+        "OCR",
+        "Mobile App",
+        "FinTech"
+    ],
+    "image": "/projects/fairsplit-swift-challenge1.png",
+    "gallery": [
+        "/projects/fairsplit-swift-challenge2.png",
+        "/projects/fairsplit-swift-challenge3.png",
+        "/projects/fairsplit-swift-challenge4.png",
+        "/projects/fairsplit-swift-challenge5.png",
+        "/projects/fairsplit-swift-challenge6.png",
+        "/projects/fairsplit-swift-challenge7.png",
+        "/projects/fairsplit-swift-challenge8.png",
+        "/projects/fairsplit-swift-challenge9.png",
+        "/projects/fairsplit-swift-challenge10.png",
+        "/projects/fairsplit-swift-challenge11.png",
+        "/projects/fairsplit-swift-challenge12.png",
+        "/projects/fairsplit-swift-challenge13.png",
+        "/projects/fairsplit-swift-challenge14.png",
+        "/projects/fairsplit-swift-challenge15.png",
+        "/projects/fairsplit-swift-challenge16.png",
+        "/projects/fairsplit-swift-challenge17.png",
+        "/projects/fairsplit-swift-challenge18.png",
+        "/projects/fairsplit-swift-challenge19.png",
+        "/projects/fairsplit-swift-challenge20.png",
+        "/projects/fairsplit-swift-challenge21.png",
+        "/projects/fairsplit-swift-challenge22.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/FairLedger",
+    "markdown": "fairsplit-swift-challenge.md",
+    "highlight": true
+    },
+    {
+    "id": "3d-cricket-simulator",
+    "title": "3D Cricket Simulator",
+    "description": "A realistic 3D cricket batting simulator built with Three.js featuring advanced physics, dynamic camera systems, and real-time mobile sensor integration.",
+    "tags": [
+        "Three.js",
+        "WebGL",
+        "Game Development",
+        "WebSockets"
+    ],
+    "image": "/projects/3d-cricket-simulator6.png",
+    "gallery": [
+        "/projects/3d-cricket-simulator1.png",
+        "/projects/3d-cricket-simulator2.png",
+        "/projects/3d-cricket-simulator3.png",
+        "/projects/3d-cricket-simulator4.png",
+        "/projects/3d-cricket-simulator5.png",
+        "/projects/3d-cricket-simulator7.png",
+        "/projects/3d-cricket-simulator8.png",
+        "/projects/3d-cricket-simulator9.png",
+        "/projects/3d-cricket-simulator10.png",
+        "/projects/3d-cricket-simulator11.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/3D_Gyro_Cricket",
+    "markdown": "3d-cricket-simulator.md",
+    "highlight": true
+    },
+    {
+    "id": "codedoc-ai",
+    "title": "CodeDoc AI",
+    "description": "AI-powered code documentation generator that converts raw source code into structured professional documentation using GPT-4o-mini.",
+    "tags": [
+        "AI",
+        "Developer Tools",
+        "Automation"
+    ],
+    "image": "/projects/codedoc-ai1.png",
+    "gallery": [
+        "/projects/codedoc-ai2.png",
+        "/projects/codedoc-ai3.png",
+        "/projects/codedoc-ai4.png",
+        "/projects/codedoc-ai5.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/CodeDoc-AI/tree/main/CodeDoc%20AI",
+    "markdown": "codedoc-ai.md",
+    "highlight": false
+    },
+    {
+    "id": "encryption-decryption-tool",
+    "title": "Encryption & Decryption Web Tool",
+    "description": "A secure web-based text encryption and decryption tool built using Python, Flask, and Fernet symmetric encryption.",
+    "tags": [
+        "Cybersecurity",
+        "Cryptography",
+        "Python",
+        "Flask"
+    ],
+    "image": "/projects/encryption-decryption-tool1.png",
+    "gallery": [
+        "/projects/encryption-decryption-tool2.png",
+        "/projects/encryption-decryption-tool3.png",
+        "/projects/encryption-decryption-tool4.png",
+        "/projects/encryption-decryption-tool5.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/Encryption_Decrytpion_Using_Fernet/tree/main/Encryption-Decryption_Tool",
+    "markdown": "encryption-decryption-tool.md",
+    "highlight": false
+    },
+    {
+    "id": "datatune-music-player",
+    "title": "DataTune - Advanced Music Player",
+    "description": "A GTK-based music player built in C that demonstrates real-time visualization of data structures like Linked Lists, Stacks, and Queues during music playback.",
+    "tags": [
+        "C Programming",
+        "Data Structures",
+        "GTK3",
+        "SQLite",
+        "Systems Programming"
+    ],
+    "image": "/projects/datatune3.png",
+    "gallery": [
+        "/projects/datatune1.png",
+        "/projects/datatune2.png",
+        "/projects/datatune4.png",
+        "/projects/datatune5.png",
+        "/projects/datatune6.png",
+        "/projects/datatune7.png",
+        "/projects/datatune8.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/III-Semester_DSA_PBL/tree/main/Datatune",
+    "markdown": "datatune.md",
+    "highlight": false
+    },
+    {
+    "id": "treevision-bst-visualizer",
+    "title": "TreeVision - Binary Search Tree Visualizer",
+    "description": "A lightweight C library that generates a clean ASCII visualization of Binary Search Trees directly in the terminal.",
+    "tags": [
+        "C Programming",
+        "Data Structures",
+        "Algorithms",
+        "Developer Tools"
+    ],
+    "image": "/projects/treevision-bst-visualizer5.png",
+    "gallery": [
+        "/projects/treevision-bst-visualizer1.png",
+        "/projects/treevision-bst-visualizer2.png",
+        "/projects/treevision-bst-visualizer3.png",
+        "/projects/treevision-bst-visualizer4.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/TreeVision",
+    "markdown": "treevision-bst-visualizer.md",
+    "highlight": false
+    },
+    {
+    "id": "bus-reservation-system",
+    "title": "Bus Reservation System",
+    "description": "Command-line based bus reservation system built in C implementing authentication, booking management, and ticket lifecycle handling.",
+    "tags": [
+        "C Programming",
+        "System Design",
+        "Data Handling"
+    ],
+    "image": "/projects/bus-reservation-system1.png",
+    "gallery": [
+        "/projects/bus-reservation-system2.png",
+        "/projects/bus-reservation-system3.png",
+        "/projects/bus-reservation-system4.png",
+        "/projects/bus-reservation-system5.png",
+        "/projects/bus-reservation-system6.png",
+        "/projects/bus-reservation-system7.png",
+        "/projects/bus-reservation-system8.png"
+    ],
+    "github": " https://github.com/naitikdhimandev-cyber/II-Sem_PBL_Bus_Reservation_System/tree/main/II-Sem_PBL_Bus_Reservation_System",
+    "markdown": "bus-reservation-system.md",
+    "highlight": false
+    },
+    {
+    "id": "nindo-chronicles",
+    "title": "Nindo Chronicles - Naruto Shippuden Web Zine",
+    "description": "An immersive anime-themed web experience featuring cinematic sections, animated character cards, and interactive storytelling built for a frontend UI hackathon.",
+    "tags": [
+        "Frontend",
+        "UI Engineering",
+        "Web Animation",
+        "Hackathon"
+    ],
+    "image": "/projects/nindo-chronicles1.png",
+    "gallery": [
+        "/projects/nindo-chronicles2.png",
+        "/projects/nindo-chronicles3.png",
+        "/projects/nindo-chronicles4.png",
+        "/projects/nindo-chronicles5.png",
+        "/projects/nindo-chronicles6.png",
+        "/projects/nindo-chronicles7.png",
+        "/projects/nindo-chronicles8.png",
+        "/projects/nindo-chronicles9.png",
+        "/projects/nindo-chronicles10.png"
+    ],
+    "github": "https://github.com/naitikdhimandev-cyber/Naruto_Zine-UI_Hackathon_Project-",
+    "demo": "https://naitik615.github.io/naruto-zine/",
+    "markdown": "nindo-chronicles.md",
+    "highlight": false
+    }
+]

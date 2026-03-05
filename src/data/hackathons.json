@@ -1,0 +1,73 @@
+[
+    {
+        "id": "h-1",
+        "event": "ENCODE 2025 - IIT Guwahati",
+        "position": "2nd Position",
+        "description": "Designed and deployed a human-like AI voice automation and customer support system capable of outbound sales calls, order booking, and real-time conversational assistance.",
+        "tags": [
+            "AI",
+            "Voice AI",
+            "Automation",
+            "Conversational Systems",
+            "Hackathon Finalist"
+        ],
+        "github": "https://github.com/naitikdhimandev-cyber/IITG-2nd.Pos._EnCode_2025/tree/main/IITG-2nd.Pos._EnCode_2025",
+        "image": "/hackathons/h-1.png",
+        "markdown": "encode-2025.md",
+        "gallery": [
+        ]
+    },
+    {
+        "id": "h-2",
+        "event": "ICP World Computer Hacker League (WHCL)",
+        "position": "Global Rank 268 - Regional Round Finalist",
+        "description": "Built a secure decentralized voting system with multi-layer identity verification using custom blockchain architecture.",
+        "tags": [
+            "Blockchain",
+            "Cybersecurity",
+            "Decentralized Systems",
+            "Global Competition"
+        ],
+        "github": "https://github.com/CypherChaser/Decentralized_Online_Voting_System_New",
+        "image": "/hackathons/h-2-3.png",
+        "markdown": "icp-2025.md",
+        "gallery": [
+            "/hackathons/h-2-1.png",
+            "/hackathons/h-2-2.png"
+        ]
+    },
+    {
+        "id": "h-3",
+        "event": "GEHU CTF - TechniEEEks Phase 3",
+        "position": "3rd Position (Solo)",
+        "description": "Secured 3rd Position in a solo Capture The Flag competition organized by the IEEE Student Branch, Graphic Era Hill University. Competed across web exploitation, cryptography, and digital forensics challenges under strict time constraints.",
+        "tags": [
+            "CTF",
+            "Cybersecurity",
+            "Web Exploitation",
+            "Cryptography",
+            "Forensics",
+            "Solo Competition"
+        ],
+        "image": "/hackathons/h-3-1.png",
+        "markdown": "gehu-ctf.md",
+        "gallery": [
+            "/hackathons/h-3-2.png"
+        ]
+    },
+    {
+        "id": "h-4",
+        "event": "MODEL FORGE - Machine Learning Competition",
+        "position": "3rd Position",
+        "description": "Secured 3rd position in a solo machine learning competitive challenge involving model building, evaluation, and performance optimization.",
+        "tags": [
+            "Machine Learning",
+            "Solo Competition",
+            "Model Building",
+            "AI"
+        ],
+        "image": "/hackathons/h-4.png",
+        "markdown": "geu-ml.md",
+        "gallery": []
+    }
+]
