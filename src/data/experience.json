@@ -8,10 +8,10 @@
         "location": "Remote",
         "description": "Completed a structured Cyber Security internship focusing on practical implementation of ethical hacking concepts, vulnerability analysis, and real-world security problem solving. Successfully delivered one minor and one major project under the Cyber Security program.",
         "markdown": "ediglobe-internship.md",
-        "image": "/experience/exp-02-3.png",
+        "image": "experience/exp-02-3.png",
         "gallery": [
-            "/experience/exp-02-1.png",
-            "/experience/exp-02-2.png"
+            "experience/exp-02-1.png",
+            "experience/exp-02-2.png"
         ],
         "tags": [
             "Cyber Security",
@@ -29,9 +29,9 @@
         "location": "Online / Remote",
         "description": "Completed training and internship in Ethical Hacking. Designed and developed an \"Encryption and Decryption Tool\" project implementing core cryptographic concepts and secure logic handling. Demonstrated strong analytical skills and efficient task management throughout the internship.",
         "markdown": "edufabrica-internship.md",
-        "image": "/experience/exp-01-2.png",
+        "image": "experience/exp-01-2.png",
         "gallery": [
-            "/experience/exp-01-1.png"
+            "experience/exp-01-1.png"
         ],
         "tags": [
             "Ethical Hacking",
@@ -48,7 +48,7 @@
         "date": "Oct 2025",
         "description": "Completed structured Cyber Security training program including minor and major security-focused projects.",
         "markdown": "ediglobe-cert.md",
-        "image": "/experience/exp-02-3.png",
+        "image": "experience/exp-02-3.png",
         "gallery": [],
         "tags": [
             "Cyber Security",
@@ -64,7 +64,7 @@
         "date": "Jan 2025",
         "description": "Successfully completed an online training program in Ethical Hacking, covering cryptography, web security fundamentals, and vulnerability concepts.",
         "markdown": "edufabrica-cert.md",
-        "image": "/experience/exp-01-2.png",
+        "image": "experience/exp-01-2.png",
         "gallery": [],
         "tags": [
             "Ethical Hacking",
