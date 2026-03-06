@@ -41,13 +41,13 @@ export const ThemeProvider = ({ children }) => {
             id: 'light',
             name: 'Light Minimal',
             icon: 'Sun',
-            bg: "/images/bg4.png"
+            bg: "images/bg4.png"
         },
         {
             id: 'modern',
             name: 'Modern Accent',
             icon: 'Zap',
-            bg: "/images/bg3.png"
+            bg: "images/bg3.png"
         },
     ];
 
