@@ -29,13 +29,13 @@ export const ThemeProvider = ({ children }) => {
             id: 'hacker',
             name: 'Hacker Terminal',
             icon: 'Terminal',
-            bg: "/images/bg1.png"
+            bg: "images/bg1.png"
         },
         {
             id: 'dark',
             name: 'Dark Professional',
             icon: 'Moon',
-            bg: "/images/bg2.png"
+            bg: "images/bg2.png"
         },
         {
             id: 'light',
