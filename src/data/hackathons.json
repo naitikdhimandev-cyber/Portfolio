@@ -12,7 +12,7 @@
             "Hackathon Finalist"
         ],
         "github": "https://github.com/naitikdhimandev-cyber/IITG-2nd.Pos._EnCode_2025/tree/main/IITG-2nd.Pos._EnCode_2025",
-        "image": "/hackathons/h-1.png",
+        "image": "hackathons/h-1.png",
         "markdown": "encode-2025.md",
         "gallery": [
         ]
@@ -29,11 +29,11 @@
             "Global Competition"
         ],
         "github": "https://github.com/CypherChaser/Decentralized_Online_Voting_System_New",
-        "image": "/hackathons/h-2-3.png",
+        "image": "hackathons/h-2-3.png",
         "markdown": "icp-2025.md",
         "gallery": [
-            "/hackathons/h-2-1.png",
-            "/hackathons/h-2-2.png"
+            "hackathons/h-2-1.png",
+            "hackathons/h-2-2.png"
         ]
     },
     {
@@ -49,10 +49,10 @@
             "Forensics",
             "Solo Competition"
         ],
-        "image": "/hackathons/h-3-1.png",
+        "image": "hackathons/h-3-1.png",
         "markdown": "gehu-ctf.md",
         "gallery": [
-            "/hackathons/h-3-2.png"
+            "hackathons/h-3-2.png"
         ]
     },
     {
@@ -66,7 +66,7 @@
             "Model Building",
             "AI"
         ],
-        "image": "/hackathons/h-4.png",
+        "image": "hackathons/h-4.png",
         "markdown": "geu-ml.md",
         "gallery": []
     }
