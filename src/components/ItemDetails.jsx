@@ -39,7 +39,7 @@ const ItemDetails = () => {
         }
         try {
             // Using absolute path from public root for reliability
-            const response = await fetch(`./markdown/${item.markdown}`);
+            const response = await fetch(`./markdown/${filename}`);
             if (!response.ok) throw new Error('Network response was not ok');
             const text = await response.text();
             setMarkdownContent(text);
