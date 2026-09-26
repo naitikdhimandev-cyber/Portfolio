@@ -96,9 +96,9 @@ const HorizontalDeck = () => {
     const ActiveComponent = componentsMap[activeTab] || Hero;
 
     return (
-        <div className="pt-20 min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+        <div className="pt-[60px] min-h-screen flex flex-col justify-between relative overflow-x-hidden">
             {/* Top Clean Deck Tab Bar */}
-            <div className="sticky top-16 z-40 bg-background/90 backdrop-blur-xl border-b border-border/50">
+            <div className="sticky top-[52px] z-40 bg-background/90 backdrop-blur-xl border-b border-border/50">
                 {/* Thin Progress Indicator Line */}
                 <div className="w-full h-[2px] bg-border/40 relative overflow-hidden">
                     <motion.div
