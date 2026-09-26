@@ -1,0 +1,353 @@
+[
+    {
+        "id": "evt-hack-to-secure",
+        "title": "From Hack to Secure: A Cybersecurity Workshop",
+        "role": "Session Lead & Technical Instructor",
+        "organization": "UTOPIA GEU & Graphic Era University",
+        "date": "22 August 2026",
+        "description": "Served as Session Lead delivering hands-on instruction in threat modeling, network traffic inspection, cryptographic integrity, controlled DoS simulations, and custom IoT hardware security tools.",
+        "image": "experience/workshop1-1.png",
+        "gallery": [
+            "experience/workshop1-2.png",
+            "experience/workshop1-3.png",
+            "experience/workshop1-appreciation.png"
+        ],
+        "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7499077133621882880/",
+        "tags": [
+            "Session Lead",
+            "Hardware/IoT Security",
+            "Threat Modeling",
+            "Certificate of Appreciation"
+        ],
+        "highlight": true,
+        "markdown": "from-hack-to-secure-workshop.md"
+    },
+    {
+        "id": "evt-emerge-2026-workshop",
+        "title": "Induction – Emerge 2026: Hands-on Cybersecurity Workshop",
+        "role": "Technical Speaker & Demonstrator",
+        "organization": "Graphic Era Deemed to be University",
+        "date": "2026",
+        "description": "Demonstrated custom IoT hardware security tools, FluxDrop secure file transfer, and hands-on Wireshark / Burp Suite vulnerability analysis under the mentorship of Prof. Darshan Singh and Prof. Mukesh Bhandari.",
+        "image": "experience/workshop2-1.png",
+        "gallery": [
+            "experience/workshop2-2.png",
+            "experience/workshop2-3.png"
+        ],
+        "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7494675992272093185/",
+        "tags": [
+            "Technical Speaker",
+            "IoT Security Demo",
+            "FluxDrop",
+            "Wireshark & Burp Suite"
+        ],
+        "highlight": true,
+        "markdown": "emerge-2026-workshop.md"
+    },
+    {
+        "id": "evt-trivarna-ctf",
+        "title": "TRIVARNA CTF 2026 (24-Hour CTF)",
+        "role": "CTF Competitor",
+        "organization": "ASTITWAM",
+        "date": "2026",
+        "description": "Participated in a non-stop 24-hour Capture The Flag competition solving complex challenge vectors across web exploitation, cryptography, and forensics. ID: TRIVARNA-2026-0529.",
+        "image": "experience/trivarna-ctf-cert.png",
+        "gallery": [],
+        "tags": [
+            "24-Hour CTF",
+            "ASTITWAM",
+            "Web Exploitation",
+            "Cryptography"
+        ],
+        "highlight": true,
+        "markdown": "trivarna-ctf-2026.md"
+    },
+    {
+        "id": "evt-csa-xcon",
+        "title": "CSA XCON 2026 — International Cloud, AI & InfoSec Conference",
+        "role": "Conference Delegate & Active Participant",
+        "organization": "Cloud Security Alliance (CSA) Uttarakhand Chapter",
+        "date": "11–14 March 2026",
+        "description": "Active participant at CSA XCON 2026 covering Cloud Security, Artificial Intelligence safety, and Information Security Research alongside global infosec leaders.",
+        "image": "experience/csa-xcon-patricipation.png",
+        "gallery": [],
+        "tags": [
+            "CSA XCON 2026",
+            "Cloud Security",
+            "AI Security",
+            "Conference"
+        ],
+        "highlight": true,
+        "markdown": "csa-xcon-2026.md"
+    },
+    {
+        "id": "evt-isea-ctf",
+        "title": "ISEA ISAP CTF 2026 — National Cyber Security CTF",
+        "role": "CTF Competitor",
+        "organization": "IIT Madras & ISEA (MeitY, Govt. of India)",
+        "date": "2026",
+        "description": "Competed in the prestigious national-level Capture The Flag competition organized by IIT Madras under the Information Security Education and Awareness initiative.",
+        "image": "experience/isea-ctf-cert.png",
+        "gallery": [],
+        "tags": [
+            "IIT Madras",
+            "MeitY",
+            "CTF",
+            "Offensive Security"
+        ],
+        "highlight": true,
+        "markdown": "isea-ctf-2026.md"
+    },
+    {
+        "id": "evt-adobe-hackathon",
+        "title": "Adobe University Hackathon 2026",
+        "role": "Hackathon Participant & Developer",
+        "organization": "Adobe",
+        "date": "09 August 2026",
+        "description": "Participated in the premier industry hackathon by Adobe, developing next-generation scalable digital software prototypes under industry evaluation standards.",
+        "image": "experience/adobe-hackathon-cert.png",
+        "gallery": [],
+        "tags": [
+            "Adobe",
+            "Industry Hackathon",
+            "Software Prototyping",
+            "Web Architecture"
+        ],
+        "highlight": false,
+        "markdown": "adobe-hackathon-2026.md"
+    },
+    {
+        "id": "evt-changethon",
+        "title": "Changethon — National Social Summit 2026",
+        "role": "Hackathon Participant & Developer",
+        "organization": "IIT Roorkee",
+        "date": "2026",
+        "description": "Built and pitched a high-impact civic security and decentralized transparency solution during the annual national summit at IIT Roorkee.",
+        "image": "experience/changethon-cert.png",
+        "gallery": [],
+        "tags": [
+            "IIT Roorkee",
+            "National Summit",
+            "Hackathon",
+            "Social Tech"
+        ],
+        "highlight": false,
+        "markdown": "changethon-2026.md"
+    },
+    {
+        "id": "evt-grafest-ctf",
+        "title": "GRAFEST 2026 — Capture The Flag (CTF)",
+        "role": "CTF Competitor (Solo)",
+        "organization": "Graphic Era University",
+        "date": "15–18 April 2026",
+        "description": "Actively participated in the university flagship cyber warfare challenge solving web exploitation, cryptography, and digital forensics problem vectors.",
+        "image": "experience/grafest-ctf-cert.png",
+        "gallery": [],
+        "tags": [
+            "GRAFEST 2026",
+            "CTF",
+            "Web Exploitation",
+            "Forensics"
+        ],
+        "highlight": false,
+        "markdown": "grafest-ctf-2026.md"
+    },
+    {
+        "id": "evt-encode-2025-parti",
+        "title": "EnCode 2025 — Code to Innovate",
+        "role": "Team: CypherChasers | Hackathon Participant",
+        "organization": "IIT Guwahati (Udgam 2025)",
+        "date": "2025",
+        "description": "Participated as Team CypherChasers in EnCode 2025 at IIT Guwahati, developing real-time AI conversational architectures.",
+        "image": "experience/encode-2025-cert.png",
+        "gallery": [],
+        "tags": [
+            "IIT Guwahati",
+            "CypherChasers",
+            "EnCode 2025",
+            "Hackathon"
+        ],
+        "highlight": false,
+        "markdown": "encode-2025.md"
+    },
+    {
+        "id": "evt-encode-2026",
+        "title": "EnCode 2026 — Code to Innovate",
+        "role": "Hackathon Participant",
+        "organization": "IIT Guwahati (Udgam 2026)",
+        "date": "2026",
+        "description": "Participated in the competitive coding and innovation hackathon conducted during Udgam 2026 at IIT Guwahati.",
+        "image": "experience/encode-2026-cert.png",
+        "gallery": [],
+        "tags": [
+            "IIT Guwahati",
+            "EnCode 2026",
+            "Hackathon",
+            "Udgam"
+        ],
+        "highlight": false,
+        "markdown": "encode-2026.md"
+    },
+    {
+        "id": "evt-wchl-national",
+        "title": "WCHL 2025 — National Round Qualification",
+        "role": "National Round Qualified Finalist",
+        "organization": "World Computer Hacker League / ICP India",
+        "date": "2025",
+        "description": "Awarded Certificate of Achievement for successfully qualifying for the National Round of the World Computer Hacker League (WCHL) 2025.",
+        "image": "experience/✅WHCL_National_round.png",
+        "gallery": [],
+        "tags": [
+            "WCHL 2025",
+            "National Round",
+            "Blockchain",
+            "Achievement"
+        ],
+        "highlight": false,
+        "markdown": "icp-2025.md"
+    },
+    {
+        "id": "evt-wchl-regional",
+        "title": "WCHL 2025 — Regional Round Qualification",
+        "role": "Regional Round Qualified Finalist",
+        "organization": "World Computer Hacker League / ICP India",
+        "date": "2025",
+        "description": "Awarded Certificate of Achievement for successfully qualifying for the Regional Round of the World Computer Hacker League (WCHL) 2025.",
+        "image": "experience/✅WHCL_Regional_round.png",
+        "gallery": [],
+        "tags": [
+            "WCHL 2025",
+            "Regional Round",
+            "Blockchain",
+            "Achievement"
+        ],
+        "highlight": false,
+        "markdown": "icp-2025.md"
+    },
+    {
+        "id": "evt-wildlife-hackathon",
+        "title": "National Hackathon on Human-Wildlife Coexistence",
+        "role": "National Hackathon Participant",
+        "organization": "Ministry of Environment, Forest & Climate Change (MoEFCC) + WII",
+        "date": "September–October 2025",
+        "description": "Prototyped smart IoT sensor alerts and real-time vision algorithms to mitigate human-wildlife conflict for the Ministry of Environment and WII at Dehradun.",
+        "image": "experience/wildlife-hackathon-cert.png",
+        "gallery": [],
+        "tags": [
+            "MoEFCC",
+            "Wildlife Institute",
+            "IoT Alerts",
+            "AI Vision"
+        ],
+        "highlight": false,
+        "markdown": "wildlife-hackathon.md"
+    },
+    {
+        "id": "evt-comsoc-hackx",
+        "title": "ComSoc HackX 2025",
+        "role": "Hackathon Participant & Core Developer",
+        "organization": "IEEE Communications Society & Chandigarh University",
+        "date": "2025",
+        "description": "Engineered real-time distributed application prototypes and secure communication logic during the IEEE ComSoc national hackathon.",
+        "image": "experience/comsoc-hackx-cert.png",
+        "gallery": [],
+        "tags": [
+            "IEEE ComSoc",
+            "Hackathon",
+            "Distributed Systems",
+            "Networking"
+        ],
+        "highlight": false,
+        "markdown": "comsoc-hackx-2025.md"
+    },
+    {
+        "id": "evt-grapethon",
+        "title": "Graph-e-Thon 2.0",
+        "role": "Team: Code Catalysts | Hackathon Developer",
+        "organization": "Technology Business Incubator (TBI), Graphic Era University",
+        "date": "2025",
+        "description": "Participated as a core developer of Team Code Catalysts in Graph-e-Thon 2.0, designing scalable software architectures and secure modules.",
+        "image": "experience/grapethon-cert.png",
+        "gallery": [],
+        "tags": [
+            "Code Catalysts",
+            "TBI-GEU",
+            "Graph-e-Thon",
+            "Hackathon"
+        ],
+        "highlight": false,
+        "markdown": "grapethon.md"
+    },
+    {
+        "id": "evt-hackoholic",
+        "title": "Hack-O-Holic 3.0",
+        "role": "Team: Cypher Chasers | Project Presentation",
+        "organization": "Co-Dev Club",
+        "date": "2025",
+        "description": "Successfully submitted and presented a structured technical project solution as part of Team Cypher Chasers in Hack-O-Holic 3.0.",
+        "image": "experience/hackoholic-cert.png",
+        "gallery": [],
+        "tags": [
+            "Cypher Chasers",
+            "Co-Dev Club",
+            "Hackathon Presentation"
+        ],
+        "highlight": false,
+        "markdown": "hack-o-holic-3.md"
+    },
+    {
+        "id": "evt-techsprint-48",
+        "title": "TechSprint-48 — GRAFEST Hackathon",
+        "role": "48-Hour Sprint Developer",
+        "organization": "Graphic Era University & Unstop",
+        "date": "01–03 May 2025",
+        "description": "Actively participated in the 48-hour continuous product engineering sprint held during GRAFEST at Graphic Era University. Verified across institutional and Unstop credentials.",
+        "image": "experience/techsprint-geu-cert.png",
+        "gallery": [
+            "experience/techsprint-unstop-cert.png"
+        ],
+        "tags": [
+            "TechSprint-48",
+            "GRAFEST",
+            "Unstop",
+            "Graphic Era",
+            "48-Hour Hackathon"
+        ],
+        "highlight": false,
+        "markdown": "techsprint-48.md"
+    },
+    {
+        "id": "evt-prodscope",
+        "title": "ProdScope 2025 — Product Case Study Competition",
+        "role": "Case Study Competitor",
+        "organization": "IIT Guwahati",
+        "date": "2025",
+        "description": "Participated in the national product case study challenge at IIT Guwahati, formulating technical product roadmaps, user workflows, and system architectures.",
+        "image": "experience/prodscope-cert.png",
+        "gallery": [],
+        "tags": [
+            "IIT Guwahati",
+            "Case Study",
+            "Product Architecture"
+        ],
+        "highlight": false,
+        "markdown": "prodscope-2025.md"
+    },
+    {
+        "id": "evt-saarthi",
+        "title": "SAARTHI 2025",
+        "role": "Event Participant",
+        "organization": "Graphic Era Hill University (GEHU), Dehradun",
+        "date": "2025",
+        "description": "Participated in SAARTHI 2025 organized by Graphic Era Hill University, engaging in technical showcases and innovation sessions.",
+        "image": "experience/saarthi-cert.png",
+        "gallery": [],
+        "tags": [
+            "SAARTHI 2025",
+            "GEHU",
+            "Symposium"
+        ],
+        "highlight": false,
+        "markdown": "saarthi-2025.md"
+    }
+]

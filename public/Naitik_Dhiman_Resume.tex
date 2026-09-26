@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Naitik Dhiman
+% Based on: Jake's Resume Template (Overleaf Compatible)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\vline height 1.5pt width \textwidth\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newenvironment{itemList}{\begin{itemize}[leftmargin=0.15in, label={}]}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Naitik Dhiman} \\ \vspace{3pt}
+    \small Dehradun, India $|$ \href{mailto:naitikdhiman.dev@gmail.com}{\underline{naitikdhiman.dev@gmail.com}} $|$ 
+    \href{https://naitikdhimandev-cyber.github.io/Portfolio/}{\underline{Portfolio}} $|$ 
+    \href{https://github.com/naitikdhimandev-cyber}{\underline{github.com/naitikdhimandev-cyber}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \begin{itemList}
+    \resumeSubheading
+      {Graphic Era Deemed to be University}{Dehradun, India}
+      {Bachelor of Technology (B.Tech) in Computer Science \& Engineering (Cyber Security)}{2023 -- Present}
+  \end{itemList}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \begin{itemList}
+
+    \resumeSubheading
+      {Research Intern}{Jun 2026 -- Aug 2026}
+      {Technology Business Incubator -- Graphic Era University (TBI-GEU)}{Dehradun, India}
+      \begin{itemize}
+        \resumeItem{Contributed to incubator research initiatives, technology prototyping, and security auditing assignments under CEO Sarishma Dangi (Cert ID: TBI-2026-VKK7-LKG7).}
+        \resumeItem{Demonstrated technical dedication and rapid learning across incubator technology workflows and startup initiatives.}
+      \end{itemize}
+
+    \resumeSubheading
+      {Cyber Security Intern}{Jun 2026 -- Jul 2026}
+      {Department of Computer Science \& Engineering, Graphic Era University}{Dehradun, India}
+      \begin{itemize}
+        \resumeItem{Engineered \textbf{Kavach}, an autonomous AI ransomware defense shield using Python \texttt{watchdog} for real-time filesystem monitoring and \texttt{IsolationForest} ML anomaly scoring (Roll No: 2026221, Mentor: Prof. Dr. Mohammad Wazid).}
+        \resumeItem{Implemented decoy honeypots and automated mitigations (\texttt{psutil} PID termination, file quarantine, and instant backup restoration).}
+      \end{itemize}
+
+    \resumeSubheading
+      {Cyber Security Intern}{Aug 2025 -- Oct 2025}
+      {EdiGlobe (in association with Zhagaram Technologies)}{Remote}
+      \begin{itemize}
+        \resumeItem{Conducted vulnerability analysis and ethical hacking assessments across web applications, authoring technical security audit reports (Cert ID: EGICZ0051).}
+        \resumeItem{Completed 1 Minor and 1 Major Cyber Security Project recognized via Certificate ID: EGPC0352.}
+      \end{itemize}
+
+    \resumeSubheading
+      {Ethical Hacking Intern}{Dec 2024 -- Jan 2025}
+      {Ethical EduFabrica Pvt. Ltd. (Alma Fiesta, IIT Bhubaneswar)}{Remote}
+      \begin{itemize}
+        \resumeItem{Developed an Encryption and Decryption web tool in Python Flask utilizing Fernet symmetric key cryptography (Cert ID: EDU-BBSR-HACK7832915).}
+        \resumeItem{Performed web application security auditing, SQL injection testing, and cryptographic verification.}
+      \end{itemize}
+
+  \end{itemList}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \begin{itemList}
+
+      \resumeProjectHeading
+          {\textbf{ESP32 MultiTool -- Dual-Chip Portable Pentest Device} $|$ \emph{ESP32, C++, Inter-ESP UART, I2C, SPI, SD, IR}}{2026}
+          \begin{itemize}
+            \resumeItem{Hand-built a dual-ESP32 hardware security device with OLED/LCD dual displays, SD card logging, and TSOP1738 IR capture/replay blaster.}
+            \resumeItem{Engineered 2.4 GHz WiFi network auditing and Evil Twin AP framework with DNS redirection and captive portal credential capture.}
+          \end{itemize}
+
+      \resumeProjectHeading
+          {\textbf{Kavach -- AI Real-Time Ransomware Defense System} $|$ \emph{Python, ML (IsolationForest), Watchdog, Psutil, Flask}}{2026}
+          \begin{itemize}
+            \resumeItem{Built a real-time ransomware defense shield using Python \texttt{watchdog} monitoring and unsupervised \texttt{IsolationForest} ML anomaly scoring.}
+            \resumeItem{Implemented decoy honeypots and autonomous mitigation workflows (process termination, quarantine, and instant backup restoration).}
+          \end{itemize}
+
+      \resumeProjectHeading
+          {\textbf{Decentralized Secure Online Voting System} $|$ \emph{Node.js, Biometrics, AI Threat Monitor, Custom Blockchain}}{2025}
+          \begin{itemize}
+            \resumeItem{Designed a multi-layer digital voting platform integrating face recognition, liveness detection, and real-time AI threat monitoring.}
+            \resumeItem{Built an immutable SHA-256 custom blockchain vote ledger ensuring tamper-proof election records (\textbf{ICP WHCL Global Rank 238}).}
+          \end{itemize}
+
+      \resumeProjectHeading
+          {\textbf{AI Customer Support \& Voice Automation System} $|$ \emph{Web Speech API, OpenAI API, Node.js, Express}}{2025}
+          \begin{itemize}
+            \resumeItem{Built a dual-purpose conversational voice platform automating promotional outreach and inbound customer support (\textbf{2nd Position Winner at IIT Guwahati ENCODE 2025}).}
+            \resumeItem{Integrated Web Speech API for real-time speech-to-text, LLM prompt logic, dynamic order booking, and automated text-to-speech delivery.}
+          \end{itemize}
+
+      \resumeProjectHeading
+          {\textbf{FluxDrop -- Zero-Knowledge Encrypted P2P File Transfer} $|$ \emph{WebRTC, WebCrypto, ECDH P-256, AES-256-GCM}}{2026}
+          \begin{itemize}
+            \resumeItem{Developed a serverless P2P file sharing engine using WebRTC data channels and WebCrypto API with zero cloud server storage.}
+            \resumeItem{Designed an animated QR camera pairing mechanism utilizing ECDH P-256 key agreement and streaming AES-256-GCM encrypted chunks.}
+          \end{itemize}
+
+    \end{itemList}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemList}
+    \small{\item{
+     \textbf{Cybersecurity \& Auditing}{: BLE Exploitation, AFRE Engine, Ransomware Defense, Honeypots, Reverse Engineering, Digital Forensics, Web Auditing} \\
+     \textbf{Hardware \& Embedded}{: ESP32 (WROOM-32D), Arduino C++, Dual-Chip Inter-ESP UART, I2C, SPI, TSOP1738 IR Decoding, OLED/LCD} \\
+     \textbf{Languages}{: C/C++ (C11), Python (3.10+), JavaScript (ES6+), SQL, Swift} \\
+     \textbf{Web \& Frameworks}{: React, Next.js, HTML5/CSS3, Tailwind CSS, Three.js, WebGL, WebSockets (Socket.IO), WebCrypto API, WebRTC, Node.js, Express, Flask} \\
+     \textbf{AI \& Computer Vision}{: OpenCV, PyTorch, IsolationForest (Scikit-Learn), OpenAI API, Cloudflare Tunnels}
+    }}
+ \end{itemList}
+
+
+%-----------HONORS, CERTIFICATIONS & CONFERENCES-----------
+\section{Honors, Certifications \& Conferences}
+ \begin{itemList}
+    \small{\item{
+     \textbf{CEH (Certified Ethical Hacker)}{: EC-Council Certified (2026)} \\
+     \textbf{CSA XCON 2026}{: Participant \& Cyber Security Training Completion (Cloud Security Alliance, Mar 2026)} \\
+     \textbf{2nd Position Winner}{: ENCODE 2025 -- IIT Guwahati Hackathon (AI Voice Support System)} \\
+     \textbf{Global Rank 238}{: ICP World Computer Hacker League (WHCL Regional Round Finalist)} \\
+     \textbf{Apple Swift Student Challenge 2025}{: Solo Submission (FairSplit iOS Expense Manager)} \\
+     \textbf{3rd Position}{: GEHU CTF TechniEEEks Phase 3 (IEEE Student Branch)}
+    }}
+ \end{itemList}
+
+%-------------------------------------------
+\end{document}

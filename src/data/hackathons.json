@@ -20,7 +20,7 @@
     {
         "id": "h-2",
         "event": "ICP World Computer Hacker League (WHCL)",
-        "position": "Global Rank 268 - Regional Round Finalist",
+        "position": "Global Rank 238 - Regional Round Finalist",
         "description": "Built a secure decentralized voting system with multi-layer identity verification using custom blockchain architecture.",
         "tags": [
             "Blockchain",
@@ -29,6 +29,7 @@
             "Global Competition"
         ],
         "github": "https://github.com/CypherChaser/Decentralized_Online_Voting_System_New",
+        "buidl": "https://dorahacks.io/buidl/31592",
         "image": "hackathons/h-2-3.png",
         "markdown": "icp-2025.md",
         "gallery": [

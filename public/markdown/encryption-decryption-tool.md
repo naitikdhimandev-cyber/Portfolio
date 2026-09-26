@@ -1,168 +1,54 @@
----
----
+# 🔐 Encryption & Decryption Tool
+### Secure Symmetric Encryption Web Application
 
-**🔐 Encryption & Decryption Web Tool**
-## 🧑‍💻 EduFabrica Internship Project
+A web-based text encryption and decryption tool built using Python, Flask, and the Fernet symmetric encryption library, allowing users to securely encode and decode messages with automatic key management.
 
-
-> A secure web-based application designed to encrypt and decrypt text using symmetric key cryptography.
+🔗 [GitHub Repository](https://github.com/naitikdhimandev-cyber/Encryption_Decrytpion_Using_Fernet/tree/main/Encryption-Decryption_Tool)
 
 ---
 
----
+## 🎯 Overview
 
-# 🏫 Project Context
-
-This project was developed as part of my **EduFabrica Internship Program**, where the focus was on implementing practical cybersecurity concepts into a real working application.
-
-
+Sensitive data transmission requires robust encryption to prevent unauthorized interception. This tool was developed to demonstrate practical cryptographic principles using modern Python libraries, providing a clean browser interface where users can transform plain text into encrypted ciphertext and safely decrypt it using symmetric keys.
 
 ---
 
-**👨‍💻 Role**
-### Developer
+## ✨ Key Features
 
-Responsible for:
-
-        • Designing the encryption workflow  
-        • Implementing cryptographic logic  
-        • Backend system development  
-        • Integrating the web interface with encryption engine  
-
-
+- **Fernet Symmetric Encryption**: Utilizes AES-128 in CBC mode with HMAC-SHA256 for authenticated encryption.
+- **Automatic Key Management**: Generates and securely stores cryptographic keys for consistent encryption/decryption cycles.
+- **Web Interface**: Clean, minimal browser UI built with Flask to handle message input and instant cryptographic operations.
+- **Safe Input Sanitation**: Handles invalid ciphertext, wrong keys, and decoding errors gracefully without crashing the server.
 
 ---
 
-**🧠 Problem Statement**
+## 🚀 How It Works
 
-Sensitive data transmission requires secure encryption to prevent unauthorized access.
-
-Many beginners and students lack simple tools to understand how modern encryption systems work in practice.
-
-The challenge was to create a **simple yet secure application** that demonstrates real-world encryption principles while remaining easy to use.
-
-
+1. **Key Generation**: The application checks for an existing key or generates a new Fernet key.
+2. **Encryption**: Plain text input is encrypted into base64 URL-safe ciphertext using the secret key.
+3. **Decryption**: Users input ciphertext and key to recover the original plain text message.
 
 ---
 
-**🚀 Solution**
+## 🏗️ Architecture
 
-I developed a web-based encryption and decryption tool that allows users to securely transform plain text into encrypted ciphertext and recover it using a symmetric key.
-
-The application demonstrates practical cryptographic implementation using modern Python security libraries.
-
-The tool includes automatic key generation and secure storage to ensure encryption and decryption consistency.
-
-
+```
+[Web UI Input] ──► [Flask Controller] ──► [Fernet Cipher Engine] ──► [Base64 Ciphertext Output]
+```
 
 ---
 
-**🔧 Core Features**
+## 🛠️ Tech Stack
 
-
-### 🔐 Secure Text Encryption
-
-        • Encrypt plain text using Fernet symmetric encryption  
-        • Generates secure ciphertext output  
-        • Uses cryptographically strong key generation  
-
-
-
-### 🔓 Secure Decryption
-
-        • Decrypt encrypted messages using the correct key  
-        • Prevents unauthorized decryption attempts  
-        • Handles invalid input and decryption failures safely  
-
-
-
-### 🔑 Key Management
-
-        • Automatically generates encryption key if not present  
-        • Securely stores key in project directory  
-        • Ensures consistent encryption/decryption operations  
-
-
-
-### 🌐 Web Interface
-
-        • Clean and simple browser interface  
-        • Allows users to encrypt and decrypt directly from the UI  
-        • Displays encrypted and decrypted output instantly  
-
-
+| Layer | Technology |
+|:---|:---|
+| **Backend** | Python, Flask |
+| **Cryptography** | Fernet (cryptography library) |
+| **Frontend** | HTML5, CSS3 |
 
 ---
 
-**🛠 Tech Stack**
+## 🧩 Challenges & Key Learnings
 
-
-### Backend
-
-        • Python  
-
-
-### Framework
-
-        • Flask  
-
-
-### Cryptography
-
-        • Fernet (Symmetric Encryption)  
-        • Python cryptography library  
-
-
-### Frontend
-
-        • HTML  
-        • CSS  
-
-
-
----
-
-**🏗 System Architecture**
-
-        1️⃣ User Interface Layer (Web Input)
-
-        2️⃣ Encryption Engine (Fernet Cipher)
-
-        3️⃣ Key Management System
-
-        4️⃣ Secure Output Layer
-
-
-User input is processed by the Flask backend where encryption or decryption is performed using the Fernet cryptographic module.
-
-
-
----
-
-**🎯 Key Outcomes**
-
-        • Implemented real-world cryptography principles  
-        • Built a secure encryption workflow using Python  
-        • Demonstrated symmetric key encryption in practice  
-        • Developed a functional cybersecurity learning tool  
-
-
-
----
-
-**📌 Learning Impact**
-
-        • Understanding symmetric encryption systems  
-        • Implementing cryptographic libraries in Python  
-        • Building secure backend logic with Flask  
-        • Designing user-friendly security tools  
-
-
-
----
-
-**📂 Repository**
-
-🔗 Source Code  
-
-https://github.com/naitikdhimandev-cyber/Encryption_Decrytpion_Using_Fernet/tree/main/Encryption-Decryption_Tool
+- **Key persistence vs generation**: Learned how key management systems store and retrieve secret keys while preventing unintended key regeneration from invalidating past ciphertexts.
+- **Fernet guarantees**: Understood how Fernet ensures confidentiality (AES) and integrity (HMAC) simultaneously in real-world cryptographic applications.

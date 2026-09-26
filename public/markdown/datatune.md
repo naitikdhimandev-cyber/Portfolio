@@ -1,204 +1,70 @@
----
----
+# 🎵 DataTune — Advanced Music Player
+### Data Structures Visualized in a Real GTK3 Music Player (C)
 
-**🎵 DataTune – Advanced Music Player**
-## 🎓 Data Structures & Systems Programming Project
+A GTK3-based desktop music player written in C that makes data structures visible — Linked Lists manage the playlist, a Stack tracks playback history, and a Queue handles upcoming tracks — all visualized in real-time as you listen.
 
-
-> A GTK-based music player developed in C that combines traditional music playback with real-time visualization of fundamental data structures such as Linked Lists, Stacks, and Queues.
-
+🔗 [GitHub Repository](https://github.com/naitikdhimandev-cyber/III-Semester_DSA_PBL/tree/main/Datatune)
 
 ---
 
----
+## 🎯 Overview
 
-# 🎓 Academic Context
-
-Developed as a **Data Structures Project (DSA PBL)** during the **3rd Semester of B.Tech Computer Science**.
-
-The goal of this project was to apply classical data structures in a practical system-level application while building a fully functional desktop application.
-
-
+Most data structure projects are academic exercises disconnected from anything real. DataTune does the opposite — it builds a fully working music player and makes the underlying data structures visible to the user while they use it. Every skip, shuffle, and repeat operation is a real Linked List traversal, Stack push, or Queue dequeue happening live. Built as a 3rd Semester DSA project in C11 with GTK3.
 
 ---
 
-**👨‍💻 Role**
-### Solo Developer
+## ✨ Key Features
 
-Responsible for designing and implementing the entire system:
-
-        • Data structure implementations  
-        • GUI development using GTK3  
-        • Database integration using SQLite  
-        • Music playback engine  
-        • Application architecture and integration  
-
-
+- **Music Playback**: MP3 and common audio format support with play, pause, skip, shuffle, repeat, and crossfade transitions.
+- **Linked List Playlist**: The entire playlist is a doubly linked list — each node is a song. Skip forward/backward is pointer traversal in real-time.
+- **Stack for History**: Recently played tracks use a LIFO Stack — the "back" button pops from the stack.
+- **Queue for Upcoming**: Songs queued to play next use a FIFO Queue — visible and interactive.
+- **Real-Time DS Visualization**: A side panel shows the current state of each data structure as music plays and operations happen.
+- **User Accounts**: SQLite-backed user registration, login, and personal playlist management.
+- **Friend System**: Friend management and collaborative playlist blending.
+- **Audio Visualization**: Visual feedback synchronized to audio output.
 
 ---
 
-**🧠 Problem Statement**
+## 🚀 How It Works
 
-Many academic data structure projects remain theoretical and disconnected from real-world applications.
-
-The goal of this project was to demonstrate how core data structures like **Linked Lists, Stacks, and Queues** are actually used inside real software systems.
-
-At the same time, the application needed to provide a **fully functional music player experience.**
-
-
+1. **Load**: User selects a folder — songs are loaded into a Linked List playlist.
+2. **Play**: Current node in the Linked List plays. DS panel shows the list with current position highlighted.
+3. **Skip**: Forward = `node->next`, Back = `node->prev` OR pop from Stack history.
+4. **Queue**: User right-clicks a song to add to Queue (FIFO) — next plays from queue head.
+5. **Visualize**: Every operation updates the data structure panel in real-time — educational and functional simultaneously.
 
 ---
 
-**🚀 Solution**
+## 🏗️ Architecture
 
-DataTune integrates music playback with data structure visualization to demonstrate their real-world usage.
-
-The system includes:
-
-        • GTK-based graphical user interface  
-        • Music playback engine  
-        • SQLite database for user and music data  
-        • Data structure modules managing playlist and playback logic  
-
-The application shows how fundamental computer science concepts power real application behavior.
-
-
+```
+[GTK3 UI Layer]         → Desktop interface, menus, controls
+[Application Logic]     → Playback engine, playlist management
+[Data Structure Layer]
+    ├── Linked List     → Playlist (doubly linked, circular option)
+    ├── Stack           → Playback history (LIFO)
+    └── Queue           → Upcoming tracks (FIFO)
+[Database Layer]        → SQLite: users, playlists, song metadata
+[Networking]            → libcurl (future streaming)
+```
 
 ---
 
-**🔧 Core Features**
+## 🛠️ Tech Stack
 
-
-### 🎵 Music Playback
-
-        • Support for MP3 and common audio formats  
-        • Play, pause, skip, shuffle, and repeat  
-        • Crossfade transitions between tracks  
-        • Audio visualization feedback  
-
-
-
-### 🏗 Data Structure Visualization
-
-        • Linked List used for playlist management  
-        • Stack used for recently played tracks (LIFO)  
-        • Queue used for upcoming tracks (FIFO)  
-        • Real-time visualization of structure operations  
-
-
-
-### 👥 Social Features
-
-        • User account system  
-        • Friend management  
-        • Collaborative playlist blending  
-        • Activity feed of listening activity  
-
-
-
-### 📊 Database Integration
-
-        • SQLite-based storage  
-        • User accounts and playlists  
-        • Song metadata management  
-
-
+| Layer | Technology |
+|:---|:---|
+| **Language** | C (C11) |
+| **GUI Framework** | GTK3 |
+| **Database** | SQLite3 |
+| **Networking** | libcurl |
+| **Build System** | Make |
 
 ---
 
-**🛠 Tech Stack**
+## 🧩 Challenges & Key Learnings
 
-        • C (C11)  
-        • GTK3 (GUI Framework)  
-        • SQLite3 (Database)  
-        • libcurl (Networking)  
-        • Make (Build System)  
-
-
-
----
-
-**🏗 System Architecture**
-
-The system operates across four layers.
-
-        1️⃣ User Interface Layer  
-        GTK-based desktop interface
-
-
-        2️⃣ Application Logic Layer  
-        Music playback engine and playlist management
-
-
-        3️⃣ Data Structure Layer  
-        Linked List (Playlist)  
-        Stack (Playback History)  
-        Queue (Next Tracks)
-
-
-        4️⃣ Database Layer  
-        SQLite storage for users and playlist data
-
-
-
----
-
-**📈 Performance Optimizations**
-
-        • Efficient in-memory data structures  
-        • Optimized SQLite queries  
-        • Lazy loading of media resources  
-        • Asynchronous UI updates  
-
-
-
----
-
-**🔒 Security Features**
-
-        • Password hashing for user accounts  
-        • Input validation mechanisms  
-        • Session management  
-        • Memory safety checks  
-
-
-
----
-
-**🎯 Key Outcomes**
-
-        • Demonstrated practical implementation of core data structures  
-
-        • Built a fully functional desktop music player in C  
-
-        • Integrated GUI, database, and system-level logic  
-
-        • Showcased system architecture beyond typical academic projects  
-
-
-
----
-
-**📌 Learning Impact**
-
-This project helped develop skills in:
-
-        • Understanding Linked Lists, Stacks, and Queues in real applications  
-
-        • GTK-based GUI development  
-
-        • Database integration using SQLite  
-
-        • Systems programming in C  
-
-        • Designing modular software architecture  
-
-
-
----
-
-**📂 Repository**
-
-🔗 Source Code  
-
-https://github.com/naitikdhimandev-cyber/III-Semester_DSA_PBL/tree/main/Datatune
+- **Memory management in C**: Dynamically allocated Linked List nodes, Stack frames, and Queue entries without garbage collection — every free() had to be tracked manually. Learned to use Valgrind for memory leak detection.
+- **GTK3 threading**: GTK is not thread-safe — audio playback runs on a background thread but all UI updates must dispatch back to the main GTK thread via `g_idle_add()`. Took significant debugging to understand this model.
+- **Crossfade implementation**: Smooth audio crossfade between tracks required mixing two audio streams simultaneously during a 3-second overlap window — implemented with a linear volume ramp on both tracks.

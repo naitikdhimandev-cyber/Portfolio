@@ -1,0 +1,149 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{6.62in}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+
+\textbf{Naitik Dhiman} \\
+\indent India \\
+\indent Email-id : \textbf{naitikdhiman06@gmail.com} / \textbf{naitikdhiman.dev@gmail.com} \\
+\indent Mobile No.: \textbf{9050446614} \\
+\indent LinkedIn: \textbf{https://www.linkedin.com/in/naitik-dhiman-85798b323/} \\
+\indent GitHub: \textbf{https://github.com/naitikdhimandev-cyber} \\
+
+\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
+\\ \\
+\noindent \begin{tabular*}{6.62in}{ p{2.0in} p{2.7in} l @{\extracolsep{\fill}} r }
+\hline
+\textbf{Examination} & \textbf{Institute / Board} & \textbf{Year} & \textbf{CPI/\%} \\
+\hline
+B.Tech (CSE Cyber Security) & Graphic Era Deemed to be University & 2023 - Present & -- \\
+12th (Science) & The S.D. Vidya Public School & 2024 & 77\% \\
+10th & The S.D. Vidya Public School & 2022 & -- \\
+\hline
+\end{tabular*}
+\\ \\
+
+\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+\begin{itemize}
+\item \noindent Aspiring software development engineer with a strong foundation in cybersecurity, ethical hacking, and AI-powered solutions. Experienced in developing secure systems, embedded hardware tools, and AI-driven applications.
+\end{itemize}
+
+\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
+\begin{itemize}
+\item \noindent C Programming, Python, C++, Data Structures, Algorithms, Cybersecurity, ESP32 Hardware, AI/ML, Blockchain, Cryptography, Ethical Hacking, Vulnerability Analysis
+\end{itemize}
+
+\resheading{\textbf{INTERNSHIPS \& EXPERIENCE} }\\[\lsep]
+\begin{itemize}
+\item \textbf{Ethical Hacking Intern} at \textbf{Ethical Edufabrica Pvt. Ltd. (Alma Fiesta, IIT Bhubaneswar)} \hfill \textit{Dec 2024 - Jan 2025} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Completed training and internship in Ethical Hacking.
+	\item Built an Encryption and Decryption Tool project implementing cryptographic concepts and secure logic handling.
+	\item Demonstrated analytical skills and efficient task management throughout the internship.
+	\end{itemize}
+
+\item \textbf{Cyber Security Intern} at \textbf{EdiGlobe (in association with Zhagaram Technologies)} \hfill \textit{Aug 2025 - Oct 2025} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Completed a structured Cyber Security internship focusing on practical implementation of ethical hacking concepts, vulnerability analysis, and real-world security problem solving.
+	\item Delivered one minor and one major project under the Cyber Security program.
+	\end{itemize}
+
+\item \textbf{Cyber Security Intern} at \textbf{Department of CSE, Graphic Era Deemed to be University} \hfill \textit{01 Jun 2026 - 10 Jul 2026} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Built \textbf{Kavach}, a ransomware defense tool using Python watchdog for real-time filesystem monitoring and IsolationForest ML anomaly scoring.
+	\item Implemented decoy honeypot files, process termination via psutil, file quarantine, and backup restoration workflows.
+	\end{itemize}
+
+\item \textbf{Research Intern} at \textbf{Technology Business Incubator, Graphic Era University (TBI-GEU)} \hfill \textit{01 Jun 2026 - 14 Aug 2026} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Worked on technical assignments, security research prototyping, and incubator innovation initiatives.
+	\item Participated in practical security auditing workflows and technical project verification models.
+	\end{itemize}
+\end{itemize}
+
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+\begin{itemize}
+\item \textbf{ESP32 MultiTool -- Dual-Chip Portable Pentest Device} \\
+ \emph{(ESP32, C++, Inter-ESP UART, I2C, SPI, SD Card, IR TSOP1738)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Built a dual-ESP32 hardware security device with OLED/LCD dual displays, SD card logging, and TSOP1738 IR capture/replay blaster.
+	\item Created a 2.4 GHz WiFi network auditing and Evil Twin AP framework with DNS redirection, captive portal hosting, and credential logging.
+	\end{itemize}
+
+\item \textbf{Kavach -- AI Real-Time Ransomware Defense System} \\
+ \emph{(Python, IsolationForest ML, Watchdog, Psutil, Flask)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Built a ransomware defense tool using Python watchdog monitoring and unsupervised IsolationForest ML anomaly scoring.
+	\item Implemented decoy honeypots and automated mitigations including process termination, file quarantine, and backup restoration.
+	\end{itemize}
+
+\item \textbf{Decentralized Secure Online Voting System} \\
+ \emph{(Cybersecurity, Blockchain, AI, Biometric Security)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Built a multi-layer secure digital voting platform integrating biometric verification, AI-based fraud detection, and blockchain-backed vote integrity.
+	\end{itemize}
+
+\item \textbf{AI Customer Support \& Voice Automation System} \\
+ \emph{(AI, Voice Systems, Web Speech API, Automation)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Built a voice automation platform capable of handling outbound promotional calls and intelligent inbound customer support using real-time conversational AI.
+	\end{itemize}
+
+\item \textbf{FluxDrop -- Zero-Knowledge Encrypted P2P File Transfer} \\
+ \emph{(WebRTC, WebCrypto API, ECDH P-256, AES-256-GCM, Node.js)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Built a serverless P2P file sharing engine using WebRTC data channels and WebCrypto API with zero cloud server storage.
+	\item Created an animated QR camera pairing mechanism using ECDH P-256 key agreement and streaming AES-256-GCM encrypted chunks.
+	\end{itemize}
+\end{itemize}
+
+\resheading{\textbf{CERTIFICATIONS} }\\[\lsep]
+\begin{itemize}
+\item \noindent CEH (Certified Ethical Hacker) - EC-Council Certified, 2026
+\item \noindent CSA XCON 2026 Training Completion - Cloud Security Alliance Uttarakhand Chapter, Mar 2026
+\item \noindent Ethical Hacking Certification - Ethical Edufabrica Pvt. Ltd. (Alma Fiesta, IIT Bhubaneswar), Jan 2025
+\end{itemize}
+
+\resheading{\textbf{HACKATHONS \& COMPETITIONS} }\\[\lsep]
+\begin{itemize}
+\item \noindent ENCODE 2025 - IIT Guwahati: Human-like AI Voice Automation \& Customer Support, 2nd Position
+\item \noindent ICP World Computer Hacker League (WHCL): Decentralized Secure Online Voting System, Global Rank 238 - Regional Round Finalist
+\item \noindent Apple Swift Student Challenge 2025: FairSplit Offline iOS Expense Manager, Solo Submission
+\item \noindent GEHU CTF - TechniEEEks Phase 3: CTF Web Exploitation \& Forensics, 3rd Position (Solo)
+\item \noindent MODEL FORGE - Machine Learning Competition: ML Model Optimization \& Building, 3rd Position
+\end{itemize}
+
+\end{document}

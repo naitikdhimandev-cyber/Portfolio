@@ -10,6 +10,7 @@ Most of your content is stored in **JSON files** inside `src/data/`. Editing the
 | :--- | :--- | :--- |
 | **Projects** | `src/data/projects.json` | `title`, `description`, `tags`, `github`, `demo` |
 | **Hackathons** | `src/data/hackathons.json` | `event`, `position`, `description`, `tags` |
+| **Event Engagements** | `src/data/events.json` | `title`, `role`, `organization`, `date`, `tags`, `certificate` |
 | **Experience** | `src/data/experience.json` | `role`, `company`, `period`, `description` |
 | **Certifications** | `src/data/experience.json` | `name`, `issuer`, `date` |
 

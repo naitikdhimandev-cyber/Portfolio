@@ -1,251 +1,57 @@
----
----
+# 🍎 AI Food Co-Pilot
+### AI Food Label & Health Assistant — ENCODE 2026 Hackathon
 
-**🥗 AI Food Co-Pilot — Food Label & Health Assistant**
-## 🏆 ENCODE 2026 — AI Native Consumer Health Experience
+An AI-powered food label analysis system that scans ingredient lists from packaging photos and explains the health impact of each ingredient through natural, conversational voice reasoning — built for the ENCODE 2026 Hackathon.
 
-
-> An AI-native consumer health system that scans food labels and explains ingredient impacts using natural language reasoning and conversational interaction.
-
+🔗 [GitHub Repository](https://github.com/CypherChaser/Encode_2026) &nbsp;&nbsp; 🌐 [Live Demo](https://cypherchaser.github.io)
 
 ---
 
----
+## 🎯 Overview
 
-# 🏆 Hackathon
-
-Built as a solution for **ENCODE 2026 Hackathon** under the category:
-
-**AI-Native Consumer Health Experience**
-
-Team Name: **Cypher Chasers**
-
-
+Food labels are legally required but practically unreadable for most consumers. "Sodium benzoate," "carrageenan," "maltodextrin" — most people skip the ingredients list because it's overwhelming. AI Food Co-Pilot solves this by letting users scan any food label and ask questions in plain English — getting clear, reasoning-driven explanations about what each ingredient actually does to their body.
 
 ---
 
-**👨‍💼 Role**
-### Team Leader
+## ✨ Key Features
 
-Responsible for:
-
-        • System architecture planning  
-        • AI reasoning system design  
-        • Coordinating frontend, backend and AI integration  
-        • Managing system development during hackathon constraints  
-
-
+- **Camera Label Scanning**: Uses the Web Media API to capture food packaging directly from the device camera.
+- **AI Ingredient Reasoning**: Sends ingredient data to an OpenAI reasoning model that explains health impacts in conversational language — not a database lookup.
+- **Multi-Turn Conversation**: Users can ask follow-up questions ("Is this safe for diabetics?", "What does carrageenan do?") within the same session context.
+- **Session-Based Memory**: Backend stores product context per session so the AI can reason across multiple questions without repetition.
+- **No Persistent Data Storage**: Sessions expire after interaction — no user data is stored on the server.
+- **Mobile-First**: Designed for phones — the primary use case is standing in a supermarket aisle scanning packaging.
 
 ---
 
-**🧠 Problem Statement**
+## 🚀 How It Works
 
-Food labels are designed for regulatory compliance rather than human understanding.
-
-Consumers are often forced to interpret:
-
-        • Long ingredient lists  
-        • Complex chemical names  
-        • Conflicting nutrition advice  
-        • Dense regulatory language  
-
-
-Existing tools fail because they:
-
-        • Surface raw data instead of insights  
-        • Require manual filtering or configuration  
-        • Increase cognitive effort when users need quick clarity  
-
-
-As a result, users struggle to make informed food decisions.
-
-
+1. **Scan**: User points their phone camera at a food label — the app captures the ingredient list.
+2. **Session**: Backend creates a temporary session ID and stores the product context in memory.
+3. **Reason**: The AI model processes the full ingredient list and generates a plain-language health explanation.
+4. **Converse**: User asks follow-up questions — the AI continues reasoning within the same session context.
+5. **Expire**: Session clears after the interaction ends — no data is persisted.
 
 ---
 
-**🚀 Solution**
+## 🛠️ Tech Stack
 
-We developed **AI Food Co-Pilot**, an AI-native system where the AI itself becomes the interface for understanding food products.
-
-Instead of displaying complex ingredient data, the system:
-
-        • Scans food labels using the device camera  
-        • Analyzes ingredient information  
-        • Generates contextual explanations  
-        • Allows users to ask follow-up questions naturally  
-        • Maintains product context during the interaction  
-
-
-The goal is to reduce cognitive effort and provide clear, human-level explanations of ingredient impact.
-
-
+| Layer | Technology |
+|:---|:---|
+| **Frontend** | React, Web Media API (camera) |
+| **Backend** | Node.js, Express.js |
+| **AI Layer** | OpenAI API (reasoning model) |
+| **Session Management** | Server-side context memory |
+| **Hosting** | GitHub Pages (frontend) |
 
 ---
 
-**🔧 Core Features**
+## 🧩 Challenges & Key Learnings
 
-
-### 📷 Food Label Scanning
-
-        • Browser-based camera access  
-        • Compatible with mobile devices  
-        • Label capture using Web Media API  
-
-
-
-### 🧠 AI Reasoning Engine
-
-        • Interprets ingredient lists  
-        • Explains health implications  
-        • Provides contextual insights instead of raw data  
-
-
-
-### 🔄 Session-Based Product Understanding
-
-        • Each scan creates a temporary product session  
-        • Follow-up questions remain tied to the same product  
-        • Ensures consistent reasoning  
-
-
-
-### 🗣 Conversational Interaction
-
-        • Supports voice and text input  
-        • Users can ask natural questions about ingredients  
-        • AI responds with contextual explanations  
-
-
-
-### 🎯 Low Cognitive Load Design
-
-        • No onboarding steps  
-        • No complex filtering  
-        • AI provides clear guidance immediately after scanning  
-
-
+- **Prompt engineering for reasoning**: Getting the AI to explain *why* an ingredient is harmful (not just label it) required carefully structured system prompts with reasoning-first instructions.
+- **Session context limits**: Learned to trim session context when it grew too large to avoid token limit errors while preserving the conversation thread.
+- **Hackathon constraints**: Delivered a full working system — camera scanning, AI reasoning, multi-turn chat — in a single hackathon session as a 4-person team.
 
 ---
 
-**🚫 What This Project Is Not**
-
-To maintain clarity and scope, the system intentionally avoids becoming:
-
-        • A calorie tracking system  
-        • A nutrition database browser  
-        • A recommendation engine  
-        • A medical diagnosis system  
-
-
-The focus is on **clear reasoning and ingredient explanation**, not data aggregation.
-
-
-
----
-
-**🛠 Tech Stack**
-
-
-### Frontend
-
-        • React  
-        • Mobile-first web interface  
-        • Browser camera access via Web Media API  
-        • Hosted on GitHub Pages  
-
-
-
-### Backend
-
-        • Node.js  
-        • Express.js  
-        • Session-based context management  
-
-
-
-### AI Layer
-
-        • OpenAI API  
-        • Reasoning-focused language model  
-        • Context-aware explanation generation  
-
-
-
----
-
-**🏗 System Architecture**
-
-The system operates through a contextual reasoning pipeline.
-
-        1️⃣ User scans food label using device camera  
-
-        2️⃣ Backend creates a temporary session ID  
-
-        3️⃣ Product context is stored in session memory  
-
-        4️⃣ AI processes ingredient data and generates explanation  
-
-        5️⃣ User asks follow-up questions  
-
-        6️⃣ AI continues reasoning within the same session context  
-
-        7️⃣ Session expires after interaction ends  
-
-
-This architecture allows contextual reasoning while avoiding persistent user data storage.
-
-
-
----
-
-**🎯 Key Outcomes**
-
-        • Demonstrated an AI-native interface for consumer health decisions  
-
-        • Built a functional label-scanning AI prototype  
-
-        • Designed reasoning-driven AI explanations instead of static nutrition data  
-
-        • Delivered a working system within hackathon constraints  
-
-
-
----
-
-**📌 Learning Impact**
-
-This project helped develop skills in:
-
-        • Designing AI-first user interfaces  
-
-        • Building contextual reasoning systems  
-
-        • Structuring session-based AI interactions  
-
-        • Coordinating multi-layer architecture under hackathon deadlines  
-
-
-
----
-
-**👥 Team Cypher Chasers**
-
-Team Leader  
-Naitik Dhiman  
-
-
-Team Members  
-
-        • Akansh  
-        • Ashish Rautela  
-        • Sahil Negi  
-
-
-
----
-
-**📂 Repository**
-
-🔗 Source Code  
-
-https://github.com/naitikdhimandev-cyber/IITG-EnCode_2026/tree/main/Encode_2026Health_Assistant
+**👥 Team Cypher Chasers** — Naitik Dhiman (Lead), Akansh, Ashish Rautela, Sahil Negi

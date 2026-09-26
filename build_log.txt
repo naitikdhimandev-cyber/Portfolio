@@ -6,7 +6,7 @@ vite v7.3.1 building client environment for production...
 transforming...
 ✓ 16 modules transformed.
 ✗ Build failed in 126ms
-error during build:
+error during build:application security auditing, SQL injection testing, and cryptographic validation.
 [vite]: Rollup failed to resolve import "framer-motion" from "/Users/naitikdhiman/Desktop/port/src/components/Hero.jsx".
 This is most likely unintended because it can break your application at runtime.
 If you do want to externalize this module explicitly add it to

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn, ZoomOut, Maximize, ExternalLink } from 'lucide-react';
 
@@ -7,14 +8,39 @@ const ImageModal = ({ isOpen, onClose, imageSrc, altText }) => {
 
     useEffect(() => {
         if (isOpen) {
+            const origBody = document.body.style.overflow;
+            const origHtml = document.documentElement.style.overflow;
+
+            // Find details modal scroll container and lock its overflow
+            const detailsScrollContainer = document.querySelector('.fixed.inset-0.overflow-y-auto');
+            const origContainerOverflow = detailsScrollContainer ? detailsScrollContainer.style.overflow : '';
+
             document.body.style.overflow = 'hidden';
-            setScale(1); // Reset scale when opening a new image
-        } else {
-            document.body.style.overflow = 'auto';
+            document.documentElement.style.overflow = 'hidden';
+            if (detailsScrollContainer) {
+                detailsScrollContainer.style.overflow = 'hidden';
+            }
+
+            setScale(1);
+
+            // Strictly block all wheel and touchmove events while image modal is open
+            const preventScroll = (e) => {
+                e.preventDefault();
+            };
+
+            window.addEventListener('wheel', preventScroll, { passive: false });
+            window.addEventListener('touchmove', preventScroll, { passive: false });
+
+            return () => {
+                document.body.style.overflow = origBody;
+                document.documentElement.style.overflow = origHtml;
+                if (detailsScrollContainer) {
+                    detailsScrollContainer.style.overflow = origContainerOverflow;
+                }
+                window.removeEventListener('wheel', preventScroll);
+                window.removeEventListener('touchmove', preventScroll);
+            };
         }
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
     }, [isOpen]);
 
     if (!isOpen) return null;
@@ -34,7 +60,7 @@ const ImageModal = ({ isOpen, onClose, imageSrc, altText }) => {
         setScale(1);
     };
 
-    return (
+    return createPortal(
         <AnimatePresence>
             {isOpen && (
                 <motion.div
@@ -42,7 +68,7 @@ const ImageModal = ({ isOpen, onClose, imageSrc, altText }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
-                    className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 sm:p-8 cursor-zoom-out"
+                    className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 sm:p-8 cursor-zoom-out overscroll-y-contain"
                     onClick={onClose}
                 >
                     <button
@@ -116,7 +142,8 @@ const ImageModal = ({ isOpen, onClose, imageSrc, altText }) => {
                     </div>
                 </motion.div>
             )}
-        </AnimatePresence>
+        </AnimatePresence>,
+        document.body
     );
 };
 

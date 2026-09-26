@@ -1,258 +1,77 @@
----
----
-**🗳 Decentralized Secure Online Voting System**
-## 🌍 Regional Round Finalist — Global Rank 268 
+# 🗳️ Decentralized Secure Online Voting System
+### Microsoft Imagine Cup 2026 | ICP WHCL Global Rank 238
 
+A multi-layer secure digital election platform combining biometric face verification, AI-based fraud detection, and blockchain-backed vote immutability — built to make digital elections tamper-proof, transparent, and coercion-resistant.
 
-> A multi-layer secure digital voting platform integrating biometric authentication, AI-driven fraud detection, and blockchain-backed vote immutability.
-
-
----
-
+- 🔗 [GitHub Repository](https://github.com/naitikdhimandev-cyber/Imagine_Cup_2026_Microsoft-/tree/main/Imagine_Cup_2026_Microsoft)
+- 🚀 [DoraHacks BUIDL Profile #31592](https://dorahacks.io/buidl/31592)
+- 📊 [Official ICP Regional Round Result Sheet (Row 238)](https://docs.google.com/spreadsheets/d/1jbIeX10oE4eV-iQUmt5E3xyREdoSNRFYdfdUmvUICSw/edit?gid=1533726982#gid=1533726982)
 
 ---
 
-# 🌍 Competition Background
+## 🎯 Overview
 
-This project was developed and refined across multiple hackathons:
-
-        • ICP World Computer Hacker League (WHCL)  
-        • Microsoft Imagine Cup 2026 (Enhanced Version)  
-        • University-Level Hackathons  
-
-
-### Progress at ICP WHCL
-
-        ✅ Qualification Round  
-        ✅ National Round  
-        ✅ Regional Round  
-
-🏆 **Achieved Global Rank 268**
-
-
+Traditional digital voting systems are centralized — one database breach or admin-level manipulation can compromise an entire election. This system eliminates those single points of failure by combining multi-factor biometric identity verification, real-time AI threat monitoring during the voting window, and a custom blockchain ledger where every vote is an immutable transaction. Developed and refined across ICP WHCL (Global Rank 238) and Microsoft Imagine Cup 2026.
 
 ---
 
-**👨‍💼 Role**
-### Team Leader
+## ✨ Key Features
 
-Responsible for:
-
-        • System architecture design  
-        • Biometric authentication integration  
-        • Blockchain vote storage implementation  
-        • AI security monitoring integration  
-        • Coordinating frontend, backend and AI services  
-
-
+- **Biometric Identity Verification**: Face recognition with liveness detection, random gesture challenge, and location verification — all within a 20-second controlled voting window.
+- **Real-Time Threat Monitoring**: Microphone-based anomaly detection, multiple face detection, mask/spoof attempt detection — any anomaly blocks the vote and alerts admin instantly.
+- **Blockchain Vote Ledger**: Every vote is encrypted, hashed, and permanently recorded on a custom blockchain — immutable, auditable, tamper-evident.
+- **Multi-Role System**: Admin (election creation), Inspector (voter registration), Voter (biometric voting), Results Portal (authenticated result validation).
+- **Audit Trail**: Complete log of every event — verifications, votes cast, anomalies detected — exportable and hash-verifiable.
+- **Performance**: < 2s average vote casting, < 1s biometric verification, supports 1000+ concurrent users.
 
 ---
 
-**🧠 Problem Statement**
+## 🚀 How It Works
 
-Digital voting systems face several critical risks.
-
-        • Identity fraud  
-        • Vote tampering  
-        • Centralized manipulation  
-        • Coercion during voting  
-        • Lack of transparent audit systems  
-
-
-Traditional centralized architectures are vulnerable to **database-level manipulation and identity spoofing.**
-
-
+1. **Setup**: Admin creates the election, defines candidates, and sets the voting window.
+2. **Registration**: Inspector registers voters and maps their biometric identity.
+3. **Vote**: Voter authenticates — face scan, liveness check, gesture challenge, location verify — then casts vote in a 20-second window.
+4. **Record**: Vote is encrypted and appended to the blockchain as an immutable transaction.
+5. **Monitor**: AI continuously watches the voting session for anomalies — flags and blocks on detection.
+6. **Result**: Authenticated result portal validates the blockchain tally and generates a verifiable report.
 
 ---
 
-**🚀 Solution**
+## 🏗️ Architecture
 
-We designed a **secure multi-role digital election platform** with layered authentication and tamper-resistant vote storage.
-
-The system includes:
-
-
-🏛 **Admin Panel**  
-        -> Election creation and candidate configuration
-
-
-🧾 **Inspector Panel**  
-        -> Voter registration and ID mapping
-
-
-🗳 **Secure Voter Interface**  
-        -> Biometric verified voting system
-
-
-📊 **Result Portal**  
-        -> Authenticated result validation
-
-
+```
+[Admin Panel] → Election config
+[Inspector Panel] → Voter registration + biometric enrollment
+[Voter Interface]
+    ├── Identity Layer: Face recognition, liveness, gesture, location
+    ├── Security Layer: AI threat monitor, anomaly detection
+    └── Vote Layer: Encrypted submission → Blockchain record
+[Results Portal] → Hash-verified blockchain tally
+[Blockchain Ledger] → Immutable vote transactions
+```
 
 ---
 
-**🔐 Multi-Layer Security Architecture**
+## 🛠️ Tech Stack
 
-
-### Identity Verification
-
-        • Unique voter ID validation  
-        • Face recognition with liveness detection  
-        • Random gesture challenge  
-        • Location verification  
-        • 20-second controlled voting window  
-
-
-
-### Threat Monitoring
-
-        • Microphone-based anomaly detection  
-        • Suspicious activity monitoring  
-        • Detection of multiple faces / masks / spoof attempts  
-        • Automatic vote blocking upon anomaly detection  
-        • Real-time admin alerts  
-
-
-
-### Vote Protection
-
-        • Encrypted vote storage  
-        • Tamper-evident transaction logs  
-        • Role-based access control  
-        • Complete audit trail generation  
-
-
+| Layer | Technology |
+|:---|:---|
+| **Backend** | Node.js, Express.js, MongoDB, JWT Auth |
+| **AI & Biometrics** | Python Flask, OpenCV, dlib, face_recognition |
+| **Gesture Recognition** | Custom module |
+| **Frontend** | React, JavaScript |
+| **Blockchain** | Custom implementation (hash-chain vote ledger) |
+| **APIs** | RESTful, secured with role-based access control |
 
 ---
 
-**⛓ Blockchain Integration**
+## 🧩 Challenges & Key Learnings
 
-The system integrates a **custom blockchain-based vote ledger**.
-
-        • Immutable vote records  
-        • Transparent verification model  
-        • Hash-based result validation  
-
-
-Each vote is **validated, encrypted and permanently recorded** to ensure data integrity.
-
-
+- **Liveness detection**: Preventing photo spoofing required combining face recognition with a randomized gesture challenge (blink, turn head) — static image attacks fail immediately.
+- **Blockchain performance**: A full blockchain for every vote creates write latency — solved by batching votes in 5-second blocks with a Merkle root for integrity.
+- **20-second window design**: Too short frustrates real voters, too long allows coercion. Tuned to 20s based on testing — enough for biometrics + casting, not enough for external instruction.
+- **Competition pressure**: Advancing through Qualification → National → Regional rounds of ICP WHCL forced rapid iterations and hardening of the security model under judge scrutiny.
 
 ---
 
-**🛠 Tech Stack**
-
-
-### Backend
-
-        • Node.js  
-        • Express  
-        • MongoDB  
-        • REST APIs  
-        • JWT Authentication  
-
-
-### AI & Biometrics
-
-        • Python Flask Service  
-        • OpenCV  
-        • dlib  
-        • face_recognition library  
-        • Gesture recognition module  
-
-
-### Frontend
-
-        • React  
-        • JavaScript  
-        • Responsive UI architecture  
-
-
-
----
-
-**🏗 System Architecture**
-
-The platform operates in four security layers.
-
-        1️⃣ Identity Verification Layer  
-
-        2️⃣ Security Monitoring Layer  
-
-        3️⃣ Blockchain Recording Layer  
-
-        4️⃣ Admin & Result Management Layer  
-
-
-All components communicate via **secured APIs with structured access control.**
-
-
-
----
-
-**🎯 Key Outcomes**
-
-        • Built a working secure digital election prototype  
-
-        • Integrated AI-based biometric verification  
-
-        • Implemented multi-layer fraud detection  
-
-        • Designed a blockchain-backed voting architecture  
-
-        • Advanced through global competitive stages  
-
-
-
----
-
-**📊 Performance Metrics**
-
-        • < 2 seconds average vote casting time  
-
-        • < 1 second biometric verification  
-
-        • Supports 1000+ concurrent users  
-
-        • Full transparent audit trail  
-
-
-
----
-
-**📌 Learning Impact**
-
-This project helped develop skills in:
-
-        • Secure distributed system design  
-
-        • AI-based biometric authentication  
-
-        • Blockchain data integrity models  
-
-        • Multi-layer security architecture  
-
-        • Leading development in competitive hackathons  
-
-
-
----
-
-**🌍 Use Cases**
-
-        • Government Elections  
-
-        • University Elections  
-
-        • Corporate Governance Voting  
-
-        • Shareholder Decision Systems  
-
-
-
----
-
-**📂 Repository**
-
-🔗 Source Code  
-https://github.com/naitikdhimandev-cyber/Imagine_Cup_2026_Microsoft-/tree/mainImagine_Cup_2026_Microsoft
+**🌍 Competition Track** — ICP World Computer Hacker League (Qualification ✅ → National ✅ → Regional ✅, Global Rank 238) | Microsoft Imagine Cup 2026

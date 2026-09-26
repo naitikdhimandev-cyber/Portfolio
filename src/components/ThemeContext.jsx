@@ -19,8 +19,19 @@ export const ThemeProvider = ({ children }) => {
         if (customColor) {
             document.documentElement.style.setProperty('--primary', customColor);
             localStorage.setItem('portfolio-custom-color', customColor);
+
+            // Convert hex to rgb format for rgba CSS variable usage
+            let hex = customColor.replace('#', '');
+            if (hex.length === 3) hex = hex.split('').map(x => x + x).join('');
+            if (hex.length === 6) {
+                const r = parseInt(hex.substring(0, 2), 16);
+                const g = parseInt(hex.substring(2, 4), 16);
+                const b = parseInt(hex.substring(4, 6), 16);
+                document.documentElement.style.setProperty('--primary-rgb', `${r}, ${g}, ${b}`);
+            }
         } else {
             document.documentElement.style.removeProperty('--primary');
+            document.documentElement.style.removeProperty('--primary-rgb');
         }
     }, [theme, customColor]);
 

@@ -1,18 +1,59 @@
 [
     {
-        "id": "exp-1",
+        "id": "exp-tbi",
+        "type": "internship",
+        "role": "Research Intern",
+        "company": "Technology Business Incubator - Graphic Era University (TBI-GEU)",
+        "period": "01 June 2026 – 14 August 2026",
+        "location": "Dehradun, India",
+        "description": "Completed a Research Internship at TBI-GEU under CEO Sarishma Dangi. Contributed to incubator security research initiatives, startup technology prototyping, and technical assignments. Certificate ID: TBI-2026-VKK7-LKG7.",
+        "markdown": "tbi-internship.md",
+        "image": "experience/tbi-internship.png",
+        "gallery": [],
+        "certificateId": "TBI-2026-VKK7-LKG7",
+        "verifyUrl": "https://tbi.geu.ac.in/verify-certificate",
+        "tags": [
+            "Research Intern",
+            "TBI-GEU",
+            "Graphic Era University",
+            "Innovation",
+            "Security Research"
+        ]
+    },
+    {
+        "id": "exp-dept-cse",
+        "type": "internship",
+        "role": "Cyber Security Intern",
+        "company": "Department of CSE, Graphic Era Deemed to be University",
+        "period": "01 June 2026 – 10 July 2026",
+        "location": "Dehradun, India",
+        "description": "Completed a Cyber Security Internship at the Department of CSE under Prof. Dr. Mohammad Wazid. Engineered Kavach (AI Real-Time Ransomware Defense System) with watchdog filesystem monitoring and IsolationForest anomaly scoring. Roll No: 2026221.",
+        "markdown": "dept-cse-geu-internship.md",
+        "image": "experience/dept-cse-internship.png",
+        "gallery": [],
+        "tags": [
+            "Cyber Security Intern",
+            "Dept of CSE",
+            "Graphic Era University",
+            "Kavach Ransomware Shield",
+            "Vulnerability Assessment"
+        ]
+    },
+    {
+        "id": "exp-ediglobe",
         "type": "internship",
         "role": "Cyber Security Intern",
         "company": "EdiGlobe (in association with Zhagaram Technologies)",
-        "period": "Aug 2025 - Oct 2025",
+        "period": "05 August 2025 – 05 October 2025",
         "location": "Remote",
-        "description": "Completed a structured Cyber Security internship focusing on practical implementation of ethical hacking concepts, vulnerability analysis, and real-world security problem solving. Successfully delivered one minor and one major project under the Cyber Security program.",
+        "description": "Completed a Cyber Security internship focusing on ethical hacking concepts, practical vulnerability analysis, and security auditing reports. Unique ID: EGICZ0051.",
         "markdown": "ediglobe-internship.md",
         "image": "experience/exp-02-3.png",
         "gallery": [
             "experience/exp-02-1.png",
             "experience/exp-02-2.png"
         ],
+        "certificateId": "EGICZ0051",
         "tags": [
             "Cyber Security",
             "Ethical Hacking",
@@ -21,18 +62,19 @@
         ]
     },
     {
-        "id": "exp-2",
+        "id": "exp-edufabrica",
         "type": "internship",
         "role": "Ethical Hacking Intern",
         "company": "Ethical Edufabrica Pvt. Ltd. (Alma Fiesta, IIT Bhubaneswar)",
-        "period": "Dec 2024 - Jan 2025",
+        "period": "December 2024 – January 2025",
         "location": "Online / Remote",
-        "description": "Completed training and internship in Ethical Hacking. Designed and developed an \"Encryption and Decryption Tool\" project implementing core cryptographic concepts and secure logic handling. Demonstrated strong analytical skills and efficient task management throughout the internship.",
+        "description": "Completed training and internship in Ethical Hacking under Shivani Chola. Designed and developed the \"Encryption and Decryption Tool\" project implementing symmetric Fernet cryptography. Certificate ID: EDU-BBSR-HACK7832915.",
         "markdown": "edufabrica-internship.md",
-        "image": "experience/exp-01-2.png",
+        "image": "experience/exp-01-1.png",
         "gallery": [
-            "experience/exp-01-1.png"
+            "experience/exp-01-2.png"
         ],
+        "certificateId": "EDU-BBSR-HACK7832915",
         "tags": [
             "Ethical Hacking",
             "Cryptography",
@@ -41,35 +83,70 @@
         ]
     },
     {
-        "id": "cert-1",
+        "id": "cert-ceh",
         "type": "certification",
-        "name": "Cyber Security Program Completion",
-        "issuer": "EdiGlobe",
-        "date": "Oct 2025",
-        "description": "Completed structured Cyber Security training program including minor and major security-focused projects.",
-        "markdown": "ediglobe-cert.md",
-        "image": "experience/exp-02-3.png",
+        "name": "CEH (Certified Ethical Hacker)",
+        "issuer": "EC-Council",
+        "date": "2026",
+        "description": "Industry-standard certification validating expertise in penetration testing, web application security auditing, network scanning, and vulnerability assessment.",
+        "markdown": "ceh-certification.md",
+        "image": "experience/ceh-certificate.png",
         "gallery": [],
         "tags": [
-            "Cyber Security",
-            "Training",
-            "Certification"
+            "CEH",
+            "EC-Council",
+            "Penetration Testing",
+            "Ethical Hacking"
         ]
     },
     {
-        "id": "cert-2",
+        "id": "cert-csa-training",
         "type": "certification",
-        "name": "Ethical Hacking Certification",
-        "issuer": "Ethical Edufabrica Pvt. Ltd. (Alma Fiesta, IIT Bhubaneswar)",
-        "date": "Jan 2025",
-        "description": "Successfully completed an online training program in Ethical Hacking, covering cryptography, web security fundamentals, and vulnerability concepts.",
-        "markdown": "edufabrica-cert.md",
-        "image": "experience/exp-01-2.png",
+        "name": "CSA XCON 2026 Cyber Security Training",
+        "issuer": "Cloud Security Alliance (CSA) Uttarakhand Chapter",
+        "date": "11–14 March 2026",
+        "description": "Successfully completed specialized Cyber Security technical training at Graphic Era University during the CSA XCON 2026 conference.",
+        "markdown": "csa-xcon-2026.md",
+        "image": "experience/csa-xcon-training.png",
         "gallery": [],
         "tags": [
-            "Ethical Hacking",
-            "Certification",
-            "Security"
+            "CSA XCON 2026",
+            "Cloud Security Alliance",
+            "Training Completion"
+        ]
+    },
+    {
+        "id": "cert-ediglobe-course",
+        "type": "certification",
+        "name": "Cyber Security Course Completion",
+        "issuer": "EdiGlobe",
+        "date": "24 October 2025",
+        "description": "Completed structured Cyber Security training program offered by EdiGlobe. Unique ID: EGCC0114.",
+        "markdown": "ediglobe-cert.md",
+        "image": "experience/exp-02-2.png",
+        "gallery": [],
+        "certificateId": "EGCC0114",
+        "tags": [
+            "Cyber Security",
+            "Course Completion",
+            "EdiGlobe"
+        ]
+    },
+    {
+        "id": "cert-ediglobe-projects",
+        "type": "certification",
+        "name": "Cyber Security Project Completion (1 Minor + 1 Major)",
+        "issuer": "EdiGlobe",
+        "date": "31 October 2025",
+        "description": "Recognized for successful completion of One Minor Project and One Major Project under the Cyber Security program. Unique ID: EGPC0352.",
+        "markdown": "ediglobe-cert.md",
+        "image": "experience/exp-02-1.png",
+        "gallery": [],
+        "certificateId": "EGPC0352",
+        "tags": [
+            "Project Completion",
+            "Minor & Major Projects",
+            "EdiGlobe"
         ]
     }
 ]

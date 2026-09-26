@@ -4,8 +4,8 @@ import { useTheme } from './ThemeContext';
 const Hero = () => {
     const { currentTheme } = useTheme();
     const name = "Naitik Dhiman";
-    const title = "Cybersecurity & Offensive Security Enthusiast & AI Systems Builderr";
-    const subline = "2nd Year BTech CSE (Cyber Security) | Offensive Security Enthusiast | Hackathon Winner | CTF Competitor";
+    const title = "Cybersecurity & Offensive Security Enthusiast & AI Systems Builder";
+    const subline = "3rd Year BTech CSE (Cyber Security) | Offensive Security Enthusiast | IoT Security | Hackathon Winner | CTF Competitor";
 
     return (
         <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -77,7 +77,7 @@ const Hero = () => {
                     >
                         <a
                             href="#projects"
-                            className="px-8 py-4 bg-primary text-background font-bold rounded-xl hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all transform hover:-translate-y-1"
+                            className="px-8 py-4 bg-primary text-background font-bold rounded-xl hover:shadow-[0_10px_25px_var(--shadow-color)] transition-all transform hover:-translate-y-1"
                         >
                             Access_Operations
                         </a>

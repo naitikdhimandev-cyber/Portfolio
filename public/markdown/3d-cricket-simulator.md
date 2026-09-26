@@ -1,281 +1,80 @@
----
----
+# 🏏 3D Cricket Simulator
+### Real-Time Browser Cricket Game with Mobile Gyroscope Control
 
-**🏏 3D Cricket Simulator**
-## 🎮 Interactive Web-Based Cricket Batting Game
+A fully interactive 3D cricket batting simulator built with Three.js, WebGL, and a real-time WebSocket motion engine. Players face AI bowlers in a dynamic stadium, using their mobile phone's gyroscope as a virtual wireless bat controller with zero-latency 60fps quaternion smoothing and haptic vibration feedback.
 
-
-> A fully interactive 3D cricket batting simulator built using Three.js and WebGL, replicating a realistic cricket experience with physics simulation, dynamic camera systems, multiple ball types, and real-time mobile sensor integration.
-
+🔗 [GitHub Repository](https://github.com/naitikdhimandev-cyber/3D_Gyro_Cricket)
 
 ---
 
----
+## 🎯 Overview
 
-**👨‍💻 Role**
-### Full Stack Developer
-
-Responsible for:
-
-        • Designing the complete 3D stadium environment  
-        • Implementing custom cricket ball physics logic  
-        • Building WebSocket communication for sensor input  
-        • Developing real-time gameplay mechanics and scoring system  
-
-
+Most web games rely on keyboard controls. This simulator turns any smartphone into a physical wireless bat controller. Built on Three.js and custom physics, the system runs an isolated **Motion System** backend that bridges mobile DeviceOrientation sensors directly into the 3D scene over WebSockets — complete with HTTPS/WSS encryption for iOS Safari support, real-time calibration, and impact vibration feedback.
 
 ---
 
-**🧠 Problem Statement**
+## ✨ Key Features
 
-Most browser-based sports games lack immersive and realistic gameplay mechanics.
-
-Common limitations include:
-
-        • Simplified or unrealistic physics simulation  
-        • Lack of immersive 3D environments  
-        • Limited player control mechanisms  
-        • No real-time hardware integration  
-
-
-Traditional web games rely heavily on keyboard inputs and simple logic, reducing realism and engagement.
-
-
+- **Mobile Gyroscope Motion Control**: Connects any smartphone over Wi-Fi to control the 3D bat in real time using raw device orientation sensors.
+- **HTTPS & Secure WebSockets (WSS)**: Dual HTTP/HTTPS server architecture (`8765`/`8768`) engineered specifically to comply with iOS Safari's strict HTTPS requirement for DeviceOrientation access.
+- **60fps Render-Loop Slerp Smoothing**: Smooths bat rotation in the rendering loop via Spherical Linear Interpolation (`wsSmoothing = 0.25`) rather than per network packet for fluid, jitter-free motion.
+- **Real-Time Haptic Feedback**: Triggers target phone vibration alerts upon bat-ball impact over WebSocket (`haptics.js`).
+- **Dynamic Orientation Calibration**: Single-tap calibration aligns phone orientation with a straight-bat stance.
+- **7 Delivery Types & Physics**: Fast, Bouncer, Yorker, Off-Spin, Leg-Spin, Normal, and Practice Wicket Ball with spin drift and ground bounce mechanics.
+- **3 Camera Perspectives**: Field View, First-Person Batting View (with FPV helmet overlay), and Ball Tracking Camera.
+- **Auto-Discovery Network Config**: Served via `/api/config` to resolve local Wi-Fi IP endpoints dynamically without manual configuration.
 
 ---
 
-**🚀 Solution**
+## 🚀 How It Works
 
-This project introduces a **fully interactive 3D cricket batting simulator** where players face AI bowlers inside a dynamic stadium environment.
-
-The system includes:
-
-        • Realistic cricket ball physics simulation  
-        • Real-time bat control using mobile gyroscope sensors  
-        • Multiple cinematic camera perspectives  
-        • Various cricket delivery types  
-        • Immersive stadium lighting and visual effects  
-
-
-Players can use either **keyboard controls** or **mobile sensors connected through WebSockets** to swing the bat.
-
-
+1. **Start Server**: Node backend starts dual HTTP/HTTPS servers and WebSocket channels.
+2. **Pair Phone**: Player opens the game on laptop and scans/opens the HTTPS URL on their phone.
+3. **Calibrate**: Player holds phone like a straight bat and taps **Calibrate** — setting initial reference quaternions.
+4. **Swing & Pitch**: AI bowler delivers — user swings their phone; 60fps slerp transforms gyro Euler angles ($Z-X'-Y''$) into bat quaternions.
+5. **Hit & Haptics**: On collision, trajectory vectors compute runs (4s/6s) and a haptic pulse triggers on the phone.
 
 ---
 
-**🔧 Core Features**
+## 🏗️ Architecture
 
-
-### ⚙️ Realistic Physics Engine
-
-        • Gravity-based ball trajectory simulation  
-        • Air drag and ground friction modeling  
-        • Ball spin and bounce mechanics  
-        • Accurate bat-ball collision reflection  
-
-
-
-### 🏏 Multiple Ball Types
-
-        • Normal Delivery  
-        • Fast Ball  
-        • Bouncer  
-        • Yorker  
-        • Off Spin  
-        • Leg Spin  
-        • Practice Wicket Ball  
-
-
-
-### 🎥 Dynamic Camera System
-
-        • Field View  
-        • First-Person Batting View  
-        • Ball Tracking Camera  
-
-
-
-### 📊 Scoring System
-
-        • Boundary detection (4 runs)  
-        • Over-boundary detection (6 runs)  
-        • Ball count and wicket tracking  
-
-
-
-### ✨ Visual Effects
-
-        • Ball trail particle effects  
-        • Boundary celebration effects  
-        • Stadium lighting system  
-        • Realistic pitch and ground textures  
-
-
+```
+[Phone Browser (phone.html)] 
+      ├── DeviceOrientation Sensor (Euler Z-X'-Y'')
+      └── Haptic Feedback Receiver
+             │
+             │ HTTPS / WSS (Port 8768 - iOS Compliant)
+             ▼
+[Node.js Motion Server (start.cjs)]
+      ├── Auto-IP Config API (/api/config)
+      └── Dual HTTP (8765) + HTTPS (8768) + WS (8766/8768)
+             │
+             │ WebSocket Bridge
+             ▼
+[Laptop Browser (game.js + bat-scene.js)]
+      ├── 60fps Quaternion Slerp Smoother (wsSmoothing)
+      ├── Three.js 3D Stadium & Player Model
+      ├── Physics Engine (Collision & Spin)
+      └── Audio & Camera Systems
+```
 
 ---
 
-**📱 Sensor-Based Bat Control**
+## 🛠️ Tech Stack
 
-One of the most unique features of the game is **real-time mobile sensor integration**.
-
-Players can connect their phone to the game via WebSockets and use the device as a **virtual cricket bat controller**.
-
-Features include:
-
-        • Gyroscope-based bat angle control  
-        • Real-time orientation tracking  
-        • Vibration feedback for shot impact  
-        • Low-latency communication  
-
-
-
-This creates a far more immersive gameplay experience compared to traditional keyboard-only controls.
-
-
+| Layer | Technology |
+|:---|:---|
+| **3D Engine & Graphics** | Three.js, WebGL, HTML5 Canvas |
+| **Networking & Motion** | Node.js, WebSockets (ws), HTTPS / TLS, WSS |
+| **Sensor Processing** | DeviceOrientation API, Euler-to-Quaternion Math, Slerp |
+| **Mobile Haptics** | Web Vibration API (`navigator.vibrate`) |
+| **Assets & Audio** | GLTF / OBJ 3D Models, Web Audio API |
+| **Build & Dev Tool** | Vite, Express.js |
 
 ---
 
-**🛠 Tech Stack**
-
-
-### Frontend
-
-        • HTML5  
-        • CSS3  
-        • JavaScript (ES6 Modules)  
-
-
-
-### 3D Rendering
-
-        • Three.js  
-        • WebGL  
-
-
-
-### Physics Engine
-
-        • Custom physics simulation logic  
-
-
-
-### Networking
-
-        • WebSockets  
-
-
-
-### Development Tools
-
-        • Vite  
-
-
-
-### Server
-
-        • Node.js WebSocket Server  
-
-
-
-### Assets
-
-        • GLTF and OBJ 3D models  
-        • Web Audio API  
-
-
-
----
-
-**🏗 System Architecture**
-
-The game operates through several modular layers.
-
-        1️⃣ Rendering Layer  
-        Three.js scene rendering, camera control, and lighting.
-
-
-        2️⃣ Game Logic Layer  
-        Ball physics simulation, player input processing, and collision detection.
-
-
-        3️⃣ Networking Layer  
-        WebSocket server enabling real-time sensor communication.
-
-
-        4️⃣ Input Layer  
-        Supports both keyboard controls and mobile gyroscope input.
-
-
-
----
-
-**🎮 Gameplay Overview**
-
-Players bat against incoming deliveries from an AI-controlled bowler.
-
-
-### Desktop Controls
-
-        • A / D → Rotate bat angle  
-        • W / S → Swing bat  
-
-
-
-### Mobile Controls
-
-        • Phone gyroscope controls bat orientation  
-        • WebSocket communication enables real-time bat movement  
-
-
-
-### Scoring System
-
-        • Hit ball to boundary → 4 runs  
-        • Hit ball over boundary → 6 runs  
-        • Avoid getting bowled or caught  
-
-
-
----
-
-**🌟 Unique Features**
-
-        • Realistic cricket stadium environment  
-        • Phone-controlled bat mechanics  
-        • Dynamic ball trajectory and spin simulation  
-        • Multiple cinematic camera perspectives  
-        • Particle-based ball trail visualization  
-        • Stadium lighting and visual effects  
-
-
-
----
-
-**🎯 Key Outcomes**
-
-        • Demonstrated advanced browser-based 3D game development  
-        • Built a realistic physics-based sports simulation  
-        • Implemented real-time hardware interaction using WebSockets  
-        • Created an immersive gameplay experience using web technologies  
-
-
-
----
-
-**📌 Learning Impact**
-
-        • Advanced Three.js and WebGL rendering techniques  
-        • Real-time networking with WebSockets  
-        • Physics simulation for interactive environments  
-        • Sensor integration for immersive gameplay  
-        • Optimization techniques for browser-based 3D games  
-
-
-
----
-
-**📂 Repository**
-
-🔗 Source Code  
-
-https://github.com/naitikdhimandev-cyber/3D_Gyro_Cricket
+## 🧩 Challenges & Key Learnings
+
+- **iOS Safari Motion Restrictions**: iOS Safari blocks `DeviceOrientation` on standard HTTP. Solved by implementing self-signed TLS certificates for dual HTTP/HTTPS (`8765`/`8768`) and Secure WebSockets (`wss://`).
+- **Network Jitter vs Smooth Motion**: Updating bat rotation directly on WebSocket packet arrival caused stuttering. Decoupled packet parsing from rendering — network packets update target quaternions while the 60fps render loop interpolates towards target via `slerp`.
+- **Gyroscope Axis Mapping**: Mapping 3-axis phone tilt to realistic cricket bat swings required custom Euler transformation matrix ($90^\circ X + 180^\circ Z$) and initial offset calibration.

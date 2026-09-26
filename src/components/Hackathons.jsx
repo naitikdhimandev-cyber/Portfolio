@@ -24,7 +24,7 @@ const Hackathons = () => {
     };
     
     return (
-        <section id="hackathons" className="py-32 bg-muted/30">
+        <section id="hackathons" className="py-32 bg-muted/30 scroll-mt-28">
             <div className="section-divider mb-32 opacity-10" />
             <div className="container mx-auto px-6">
                 <div className="mb-12">

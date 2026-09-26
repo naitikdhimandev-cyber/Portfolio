@@ -1,195 +1,79 @@
----
----
+# 🎙️ AI Customer Support & Voice Automation System
+### 🏆 2nd Position — ENCODE 2025 | IIT Guwahati Hackathon
 
-**🎙 AI Customer Support & Voice Automation System**
-## 🏆 2nd Position — ENCODE 2025 | IIT Guwahati Hackathon
+A dual-purpose AI platform that handles both outbound promotional calls and inbound customer support using real-time conversational voice AI — simulating natural human interaction without a human agent.
 
-
-> An AI-driven conversational platform designed to automate outbound promotional calls and provide intelligent inbound customer support using real-time voice and text interaction.
+🔗 [GitHub Repository](https://github.com/naitikdhimandev-cyber/IITG-2nd.Pos._EnCode_2025/tree/main/IITG-2ndPos_EnCode_2025)
 
 ---
 
----
+## 🎯 Overview
 
-# 🏆 Achievement
+Modern businesses struggle to scale customer communication without ballooning support costs. This system addresses both sides of that problem — AI that initiates outbound promotional calls (asking if it's a good time to talk, explaining products, booking orders) and AI that handles inbound support queries (identity verification, order tracking, contextual resolution). All interactions happen via real-time voice using Web Speech API and text-to-speech synthesis.
 
-Secured **2nd Position at ENCODE 2025 — IIT Guwahati Hackathon.**
-
-The system demonstrated how conversational AI can automate customer engagement workflows while maintaining natural human-like interaction.
-
-
+**🏆 Secured 2nd Position at ENCODE 2025 — IIT Guwahati Hackathon**
 
 ---
 
-**👨‍💼 Role**
-### Team Leader
+## ✨ Key Features
 
-Responsible for:
-
-        • System architecture design  
-        • AI integration and prompt logic  
-        • Voice interaction pipeline  
-        • Conversational flow design  
-        • Coordinating implementation across the development team  
-        • Demonstrating the working prototype to judges  
-
-
+- **Promotion AI**: Initiates outbound conversations, presents product info dynamically, handles objections contextually, generates order IDs on booking.
+- **Support AI**: Handles inbound queries, verifies user identity before service, resolves order tracking and product questions.
+- **Voice Interaction**: Speech-to-text user input + AI-synthesized voice responses — full conversation in voice with no typing required.
+- **Context-Aware Responses**: Maintains conversation history within a session so the AI doesn't repeat itself or lose context mid-call.
+- **Human-Like Tone**: GPT prompt engineering crafted for natural pacing, polite interruptions, and realistic conversational flow.
 
 ---
 
-**🧠 Problem Statement**
+## 🚀 How It Works
 
-Modern businesses face several challenges in customer communication.
-
-        • Scaling promotional outreach  
-        • Handling large volumes of customer queries  
-        • Maintaining consistent conversational quality  
-        • Reducing operational cost of human support teams  
-
-Traditional call centers struggle to balance efficiency with personalized communication.
-
-
+1. **Outbound mode**: AI initiates conversation, checks availability, pitches product, handles Q&A, and books the order with a generated order ID.
+2. **Inbound mode**: Customer contacts support — AI verifies identity, reads context, and resolves the query conversationally.
+3. **Voice loop**: Web Speech API captures user speech → text sent to backend → GPT generates response → text-to-speech plays back → loop continues.
 
 ---
 
-**🚀 Solution**
+## 🏗️ Architecture
 
-We developed a **dual-purpose AI system** capable of both promotional outreach and intelligent customer support.
-
-The platform allows AI to:
-
-        • Initiate automated promotional conversations  
-        • Ask users if it is a suitable time to talk  
-        • Present product information dynamically  
-        • Handle customer queries through conversational AI  
-        • Generate order IDs after successful product booking  
-        • Provide real-time support for existing customers  
-
-The system simulates **natural human conversation** using voice and language models.
-
-
-
----
-
-**🔧 Core Features**
-
-
-### 📢 Promotion AI
-
-        • AI-generated personalized promotional messages  
-        • Dynamic product explanation  
-        • Context-aware responses  
-        • Automated order booking  
-        • Unique order ID generation  
-
-
-
-### 🛎 Customer Support AI
-
-        • Handles inbound customer queries  
-        • User identity verification before service  
-        • Order tracking support  
-        • Context-aware query resolution  
-
-
-
-### 🎙 Voice Interaction System
-
-        • Speech-to-text for user voice input  
-        • AI-generated voice responses  
-        • Real-time conversational interaction  
-        • Human-like tone and pacing  
-
-
+```
+[Web Interface]
+      │
+      ▼
+[Web Speech API] ──► Speech-to-Text
+      │
+      ▼
+[Node.js + Express Backend]
+      │
+      ▼
+[OpenAI GPT API] ──► Contextual response generation
+      │
+      ▼
+[Text-to-Speech Output] ──► Plays back to user
+      │
+[Logic Layer] ──► Order booking, identity check, session tracking
+```
 
 ---
 
-**🛠 Tech Stack**
+## 🛠️ Tech Stack
 
-
-### Frontend
-
-        • HTML5  
-        • CSS3  
-        • JavaScript  
-
-
-### Backend
-
-        • Node.js  
-        • Express.js  
-
-
-### AI Integration
-
-        • OpenAI API (GPT-based response generation)  
-
-
-### Voice Processing
-
-        • Web Speech API (Speech-to-text)  
-        • AI Text-to-Speech Output  
-
-
-### Data Handling
-
-        • JSON-based data storage  
-
-
+| Layer | Technology |
+|:---|:---|
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Backend** | Node.js, Express.js |
+| **AI** | OpenAI API (GPT) |
+| **Voice Input** | Web Speech API (Speech-to-Text) |
+| **Voice Output** | AI Text-to-Speech synthesis |
+| **Data** | JSON-based session and order storage |
 
 ---
 
-**🏗 System Architecture**
+## 🧩 Challenges & Key Learnings
 
-The system operates in four logical layers.
-
-        1️⃣ User Interaction Layer  
-        Voice and web interface for communication.
-
-
-        2️⃣ AI Processing Layer  
-        Natural language processing and response generation.
-
-
-        3️⃣ Logic & Automation Layer  
-        Handles order booking, identity verification, and workflow logic.
-
-
-        4️⃣ Output Layer  
-        Voice synthesis and conversational response delivery.
-
-
+- **Latency in voice loop**: GPT response + TTS playback needs to feel natural. Added typing indicators and pre-buffered TTS to reduce dead air between turns.
+- **Conversation state management**: Keeping the AI "in character" as a customer rep across multiple turns required careful system prompt design and session context trimming.
+- **Hackathon delivery**: Built and demoed a fully working voice AI system — two modes, live interaction, order booking — under a tight deadline as team lead.
 
 ---
 
-**🎯 Key Outcomes**
-
-        • Built a fully working conversational AI prototype  
-        • Demonstrated real-world call automation use cases  
-        • Integrated AI voice interaction within a web system  
-        • Delivered a live working demo during hackathon evaluation  
-        • Secured 2nd Position among competing teams  
-
-
-
----
-
-**📌 Learning Impact**
-
-This project helped develop skills in:
-
-        • Designing conversational AI workflows  
-        • Integrating AI APIs into real applications  
-        • Handling real-time voice interactions  
-        • Building scalable automation systems  
-        • Leading development under hackathon time constraints  
-
-
-
----
-
-**📂 Repository**
-
-🔗 Source Code  
-
-https://github.com/naitikdhimandev-cyber/IITG-2nd.Pos._EnCode_2025/tree/main/IITG-2ndPos_EnCode_2025
+**👥 Team** — Naitik Dhiman (Team Leader)
